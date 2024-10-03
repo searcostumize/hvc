@@ -15,14 +15,15 @@ body, html {
 /* Logo en zoek sectie */
 .logo-section {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center;  /* Centraal uitlijnen op de Y-as (verticaal) */
+    justify-content: start;
 }
 
 /* Logo afbeelding */
 .logo {
     width: 120px;
     height: auto;
+    margin-right: 20px; /* Voeg ruimte tussen het logo en de tekst toe */
 }
 
 /* Zoek en menu-sectie */
@@ -30,7 +31,6 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 20px;
 }
 
 /* Tekst waar ben je naar op zoek */
@@ -44,7 +44,7 @@ body, html {
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
 }
 
 nav ul li {
@@ -61,3 +61,4 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
