@@ -4,96 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herbert Vissers College</title>
-    <style>
-        /* Algemene stijlen */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        /* Header */
-        header {
-            background-color: #004080; /* Donkerblauwe kleur */
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header img {
-            width: 120px;
-            height: auto;
-        }
-
-        /* Navigatiebalk */
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #003366;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Hoofdsectie */
-        .main-content {
-            padding: 50px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .main-content h2 {
-            color: #004080;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .grid-item {
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Verbindt met het CSS-bestand -->
 </head>
 <body>
 
-    <!-- Header met logo -->
-    <header>
-        <img src="logo.svg">
-        <h1>Herbert Vissers College</h1>
+    <header class="header">
+        <div class="logo-section">
+            <img src="logo.svg"> <!-- Zorg dat je het HVC-logo correct hebt -->
+            <div class="search-section">
+                <h1>Waar ben je naar op zoek?</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Leerlingen & Ouders</a></li>
+                        <li><a href="#">Onze School</a></li>
+                        <li><a href="#">Ondersteuning</a></li>
+                        <li><a href="#">Actueel</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <!-- Navigatiebalk -->
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Over Ons</a>
-        <a href="#">Onderwijs</a>
-        <a href="#">Nieuws</a>
-        <a href="#">Contact</a>
-    </nav>
-
-    <!-- Hoofdinhoud -->
-    <
+</body>
+</html>
 
