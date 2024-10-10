@@ -23,7 +23,7 @@
 
         .top-section {
             display: flex;
-            align-items: center;
+            align-items: center; /* Zorgt ervoor dat alles gecentreerd is */
             padding: 10px 20px;
             background-color: #f4f4f4;
         }
@@ -53,12 +53,11 @@
             font-size: 16px;
             color: #333;
             display: flex; /* Flexbox voor horizontale plaatsing */
-            justify-content: flex-end; /* Zorg ervoor dat het rechts uitgelijnd is */
-            align-items: center; /* Center de items verticaal */
+            align-items: center; /* Zorgt ervoor dat ze op dezelfde hoogte staan */
+            gap: 15px; /* Ruimte tussen de links */
         }
 
         .utility-links a {
-            margin-right: 15px;
             text-decoration: none;
             color: #555;
         }
@@ -131,7 +130,7 @@
         <div class="top-section">
             <img src="hvc-logo.svg" alt="HVC Logo" class="logo"> <!-- SVG logo helemaal links -->
             <div class="search-section">
-                <a>Waar ben je naar op zoek?</a>
+                <h1>Waar ben je naar op zoek?</h1>
                 <div class="utility-links">
                     <span class="arrow">➔</span>
                     <a href="#">Ziekmelden</a>
