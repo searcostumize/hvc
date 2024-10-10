@@ -12,67 +12,94 @@
             background-image: url('slider-hvc-hvc.webp');
             background-repeat: no-repeat;
             background-position-y: 144px;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            position: relative;
         }
+
         .content {
             margin-left: 15%;
             margin-right: auto;
         }
+
         .logo {
-            overflow: hidden;
-            margin-left: 85%;
-            margin-top: 10%;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 150px;
+            height: auto;
         }
-        /* Zoek-sectie */
+
+        /* Centraal geplaatste tekst */
+        .center-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+
         .search-section {
             display: flex;
             flex-direction: column;
             justify-content: center;
             position: relative;
         }
+
         .search-section h1 {
             font-size: 24px;
             color: #333;
             margin: 0;
         }
-        /* Stijlen voor eerste navigatie */
+
         nav ul {
             list-style-type: none;
             padding: 0;
             margin: 10px 0 0 0;
         }
+
         nav ul li {
             display: inline;
             margin-right: 20px;
         }
+
         nav ul li a {
             text-decoration: none;
             font-size: 18px;
             color: #0073e6;
         }
+
         nav ul li a:hover {
             text-decoration: underline;
         }
-        /* Nieuwe sectie voor Ziekmelden, Downloads, etc. */
+
         .utility-links {
             margin-top: 10px;
             font-size: 16px;
             color: #333;
             position: relative;
         }
+
         .utility-links a {
             margin-right: 15px;
             text-decoration: none;
             color: #555;
         }
+
         .utility-links a:hover {
             text-decoration: underline;
             color: #0073e6;
         }
-        /* Pijltje-stijl */
+
         .arrow {
             position: absolute;
             top: -10px;
-            left: 170px; /* Zorg dat het de juiste afstand heeft vanaf de tekst */
+            left: 170px;
             font-size: 24px;
             color: green;
         }
@@ -80,8 +107,7 @@
 
     <header class="header">
         <div class="logo-section">
-            <!-- In plaats van een PNG of JPEG wordt hier het SVG-bestand gebruikt -->
-            <img src="hvc-logo.svg" alt="HVC Logo" class="logo"> <!-- Zorg dat je het SVG-bestand hebt -->
+            <img src="logo.png" alt="HVC Logo" class="logo"> <!-- Logo rechtsboven -->
             <div class="search-section">
                 <h1>Waar ben je naar op zoek?</h1>
                 <nav>
@@ -92,7 +118,6 @@
                         <li><a href="#">Actueel</a></li>
                     </ul>
                 </nav>
-                <!-- Toegevoegde links voor Ziekmelden, Downloads, etc. -->
                 <div class="utility-links">
                     <div class="arrow">➔</div> <!-- Groen pijltje toegevoegd -->
                     <a href="#">Ziekmelden</a> |
@@ -102,7 +127,12 @@
                 </div>
             </div>
         </div>
+
+        <!-- Tekst in het midden van de pagina -->
+        <div class="center-text">
+            Samen Morgen Maken
+        </div>
     </header>
+
 </body>
 </html>
-
