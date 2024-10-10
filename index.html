@@ -69,24 +69,6 @@
             margin-right: 10px;
         }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            font-size: 18px;
-            color: #0073e6;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
         /* Achtergrondsectie */
         .background {
             background-image: url('slider-hvc-hvc.webp'); /* Achtergrondafbeelding */
@@ -95,6 +77,10 @@
             height: 400px;
             position: relative;
             color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 20px;
         }
 
         .background-logo {
@@ -109,14 +95,32 @@
         }
 
         .background-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             font-size: 48px;
             font-weight: bold;
             color: white;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .links {
+            margin-top: 50px; /* Ruimte tussen de tekst en de links */
+        }
+
+        .links ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+            font-size: 18px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
         }
     </style>
 
@@ -125,6 +129,7 @@
         <div class="top-section">
             <img src="hvc-logo.svg" alt="HVC Logo" class="logo"> <!-- SVG logo helemaal links -->
             <div class="search-section">
+                <h1>Waar ben je naar op zoek?</h1>
                 <div class="utility-links">
                     <span class="arrow">➔</span>
                     <a href="#">Ziekmelden</a> |
@@ -143,18 +148,17 @@
             <div class="background-text">
                 Samen <strong>Morgen</strong> Maken
             </div>
+
+            <!-- Links onder de achtergrondafbeelding -->
+            <div class="links">
+                <ul>
+                    <li><a href="#">Leerlingen & Ouders</a></li>
+                    <li><a href="#">Onze School</a></li>
+                    <li><a href="#">Ondersteuning</a></li>
+                    <li><a href="#">Actueel</a></li>
+                </ul>
+            </div>
         </div>
-
-        <!-- Onderste gedeelte: "Leerlingen & Ouders", "Onze School", etc. -->
-        <nav>
-            <ul>
-                <li><a href="#">Leerlingen & Ouders</a></li>
-                <li><a href="#">Onze School</a></li>
-                <li><a href="#">Ondersteuning</a></li>
-                <li><a href="#">Actueel</a></li>
-            </ul>
-        </nav>
     </header>
-
 </body>
 </html>
