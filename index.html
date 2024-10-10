@@ -4,85 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herbert Vissers College</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Verbindt met het CSS-bestand -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <style>
-        body {
-            background-image: url('slider-hvc-hvc.webp');
-            background-repeat: no-repeat;
-            background-position-y: 144px;
+        body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             font-family: Arial, sans-serif;
-            position: relative;
         }
 
-        .content {
-            margin-left: 15%;
-            margin-right: auto;
+        .header {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .top-section {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f4f4f4;
         }
 
         .logo {
-            position: absolute;
-            top: 20px;
-            right: 20px;
             width: 150px;
             height: auto;
-        }
-
-        /* Centraal geplaatste tekst */
-        .center-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 48px;
-            font-weight: bold;
-            color: black;
-            text-align: center;
+            margin-right: 20px;
         }
 
         .search-section {
+            flex-grow: 1;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            position: relative;
         }
 
         .search-section h1 {
             font-size: 24px;
-            color: #333;
+            color: black;
             margin: 0;
         }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 10px 0 0 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            font-size: 18px;
-            color: #0073e6;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
         .utility-links {
-            margin-top: 10px;
+            margin-top: 5px;
             font-size: 16px;
             color: #333;
-            position: relative;
         }
 
         .utility-links a {
@@ -97,29 +64,69 @@
         }
 
         .arrow {
-            position: absolute;
-            top: -10px;
-            left: 170px;
-            font-size: 24px;
+            font-size: 20px;
             color: green;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #0073e6;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Achtergrondsectie */
+        .background {
+            background-image: url('slider-hvc-hvc.webp'); /* Achtergrondafbeelding */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            position: relative;
+            color: white;
+        }
+
+        .background-logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .background-logo img {
+            width: 120px;
+            height: auto;
+        }
+
+        .background-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
         }
     </style>
 
     <header class="header">
-        <div class="logo-section">
-            <img src="logo.png" alt="HVC Logo" class="logo"> <!-- Logo rechtsboven -->
+        <!-- Bovenste gedeelte: Logo aan de linkerkant en links met een pijltje -->
+        <div class="top-section">
+            <img src="hvc-logo.svg" alt="HVC Logo" class="logo"> <!-- SVG logo helemaal links -->
             <div class="search-section">
-                <h1>Waar ben je naar op zoek?</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">Leerlingen & Ouders</a></li>
-                        <li><a href="#">Onze School</a></li>
-                        <li><a href="#">Ondersteuning</a></li>
-                        <li><a href="#">Actueel</a></li>
-                    </ul>
-                </nav>
                 <div class="utility-links">
-                    <div class="arrow">➔</div> <!-- Groen pijltje toegevoegd -->
+                    <span class="arrow">➔</span>
                     <a href="#">Ziekmelden</a> |
                     <a href="#">Downloads</a> |
                     <a href="#">Magister</a> |
@@ -128,10 +135,25 @@
             </div>
         </div>
 
-        <!-- Tekst in het midden van de pagina -->
-        <div class="center-text">
-            Samen Morgen Maken
+        <!-- Achtergrondafbeelding met tekst en logo rechtsboven -->
+        <div class="background">
+            <div class="background-logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="background-text">
+                Samen <strong>Morgen</strong> Maken
+            </div>
         </div>
+
+        <!-- Onderste gedeelte: "Leerlingen & Ouders", "Onze School", etc. -->
+        <nav>
+            <ul>
+                <li><a href="#">Leerlingen & Ouders</a></li>
+                <li><a href="#">Onze School</a></li>
+                <li><a href="#">Ondersteuning</a></li>
+                <li><a href="#">Actueel</a></li>
+            </ul>
+        </nav>
     </header>
 
 </body>
