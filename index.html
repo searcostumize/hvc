@@ -93,10 +93,10 @@
             color: #0073e6;
         }
 
-        /* Achtergrondsectie met 75% paarse rechthoek en 10% gradient */
+        /* Achtergrondsectie met 20% paarse rechthoek en 10% gradient */
         .background {
             background-image: 
-                linear-gradient(to right, #4B0082 75%, transparent 75%), 
+                linear-gradient(to right, rgba(75, 0, 130, 1) 20%, rgba(75, 0, 130, 0) 20%), 
                 url('slider-hvc-hvc.webp');
             background-size: cover;
             background-position: center;
@@ -122,16 +122,16 @@
             height: auto;
         }
 
-        /* Tekst Samen Morgen Maken vergroot en op 25% van de achtergrond */
+        /* Tekst Samen Morgen Maken */
         .background-text {
-            font-size: 24px; /* Tekst is nu de helft van de oorspronkelijke grootte (48px) */
+            font-size: 36px; /* Terug naar een grotere tekstgrootte */
             font-weight: bold; /* Samen is nu vetgedrukt */
             color: white;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
             position: absolute;
             top: 25%; /* Plaatst de tekst op ongeveer 25% van de hoogte van de achtergrond */
             left: 50%;
-            transform: translate(-50%, -25%); /* Zorgt dat de tekst mooi in het midden van de breedte blijft */
+            transform: translate(-50%, -50%); /* Zorgt dat de tekst mooi in het midden van de breedte blijft */
             text-align: center;
         }
 
