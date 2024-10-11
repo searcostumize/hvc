@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herbert Vissers College</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <style>
-
-        input{
+        input {
             border: 0px;
             outline: 0px;
             font: bolder;
             font-size: large;
-            width: 100%;
+            width: 300px; /* Specifieke breedte voor het zoekveld */
+            margin-left: 10px; /* Ruimte tussen zoekveld en tekst */
         }
-        body, html {
+
+        body,
+        html {
             margin: 0;
             padding: 0;
             height: 100%;
@@ -37,9 +41,9 @@
         }
 
         .logo {
-            width: 250px; /* Grootte van het logo */
+            width: 250px;
             height: auto;
-            margin-right: 40px; /* Ruimte tussen logo en tekstgedeelte */
+            margin-right: 40px;
         }
 
         .search-section {
@@ -61,13 +65,13 @@
             color: black;
             margin: 0;
             padding-bottom: 5px;
-            border-bottom: 2px solid green; /* Groene lijn alleen onder de tekst */
+            border-bottom: 2px solid green;
         }
 
         .arrow {
             font-size: 20px;
             color: green;
-            margin-left: 10px; /* Ruimte tussen de tekst en het pijltje */
+            margin-left: 10px;
         }
 
         .utility-links {
@@ -75,7 +79,9 @@
             font-size: 16px;
             color: #333;
             display: flex;
+            align-items: center; /* Zorg ervoor dat de items in het midden uitgelijnd zijn */
             gap: 15px;
+            margin-left: 30px; /* Meer ruimte aan de linkerkant voor de links */
         }
 
         .utility-links a {
@@ -99,7 +105,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            padding: 40px; /* Vergroot padding om ruimte te creëren rondom de tekst */
+            padding: 40px;
         }
 
         .background-logo {
@@ -140,17 +146,16 @@
     </style>
 
     <header class="header">
-        <!-- Bovenste gedeelte: Logo aan de linkerkant en links met een pijltje -->
         <div class="top-section">
-            <img src="hvc-logo.svg" alt="HVC Logo" class="logo"> <!-- SVG logo helemaal links -->
+            <img src="hvc-logo.svg" alt="HVC Logo" class="logo">
             <div class="search-section">
                 <div class="search-container">
-                    
+                    <h1>Waar ben je naar op zoek?</h1>
+                    <span class="arrow">➔</span>
                 </div>
                 <div class="utility-links">
-                   <input type="search" placeholder="Waar ben je naar op zoek?"></a>
-                    <span class="arrow">➔</span> <!-- Pijltje buiten de container van de tekst met de groene lijn -->
-                     <a href="#">Ziekmelden</a>
+                    <input type="search" placeholder="Waar ben je naar op zoek?">
+                    <a href="#">Ziekmelden</a>
                     <a href="#">Downloads</a>
                     <a href="#">Magister</a>
                     <a href="#">Zermelo</a>
@@ -165,7 +170,6 @@
             </div>
         </div>
 
-        <!-- Achtergrondafbeelding met tekst en logo rechtsboven -->
         <div class="background">
             <div class="background-logo">
                 <img src="logo.png" alt="Logo">
@@ -176,4 +180,5 @@
         </div>
     </header>
 </body>
+
 </html>
