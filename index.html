@@ -24,12 +24,12 @@
         .top-section {
             display: flex;
             align-items: center; 
-            padding: 20px 40px; /* Extra padding voor meer ruimte rondom de content */
+            padding: 20px 40px;
             background-color: #f4f4f4;
         }
 
         .logo {
-            width: 150px; /* Verkleind voor betere layout */
+            width: 150px; /* Grootte van het logo */
             height: auto;
             margin-right: 40px; /* Ruimte tussen logo en tekstgedeelte */
         }
@@ -48,13 +48,16 @@
             margin: 0;
         }
 
+        /* Dit voegt de groene lijn toe onder de tekst en het pijltje */
         .utility-links {
             margin-top: 5px;
             font-size: 16px;
             color: #333;
             display: flex; 
             align-items: center; 
-            gap: 20px; /* Meer ruimte tussen de links */
+            gap: 15px; /* Ruimte tussen de tekst en het pijltje */
+            border-bottom: 2px solid green; /* Groene lijn */
+            padding-bottom: 5px; /* Extra ruimte onder de links en de lijn */
         }
 
         .utility-links a {
@@ -104,14 +107,14 @@
             font-weight: bold;
             color: white;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-            margin-top: 50px; /* Ruimte tussen de tekst en de links */
+            margin-top: 50px;
         }
 
         .links {
-            margin-top: 20px; /* Ruimte tussen "waar ben je naar op zoek" en de links */
+            margin-top: 20px; 
             position: relative; 
             z-index: 1;
-            display: flex; /* Flexbox voor horizontale plaatsing */
+            display: flex; /* Flexbox voor horizontale plaatsing van de links */
             gap: 20px; /* Ruimte tussen de links */
         }
 
