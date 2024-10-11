@@ -81,7 +81,7 @@
             display: flex;
             align-items: center;
             gap: 15px;
-            margin-left: 30px; /* Meer ruimte aan de linkerkant voor de links */
+            margin-left: 30px;
         }
 
         .utility-links a {
@@ -96,10 +96,11 @@
 
         /* Achtergrondsectie */
         .background {
-            background-image: url('slider-hvc-hvc.webp');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
+            background-image: url('slider-hvc-hvc.webp'); /* Zorg ervoor dat je de juiste afbeelding hier gebruikt */
+            background-size: cover; /* Zorgt ervoor dat de afbeelding de hele achtergrond bedekt */
+            background-position: center; /* Plaats de afbeelding in het midden */
+            background-repeat: no-repeat; /* Voorkomt dat de afbeelding herhaald wordt */
+            height: 100vh; /* De achtergrond vult de volledige hoogte van het scherm */
             position: relative;
             color: white;
             display: flex;
@@ -110,13 +111,13 @@
 
         .background-logo {
             position: absolute;
-            top: 50%; /* Centreren in de verticale richting */
-            right: -90px; /* Plaats het logo aan de rechterkant */
-            transform: translateY(-50%); /* Zorg ervoor dat het logo gecentreerd is ten opzichte van zijn hoogte */
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
         }
 
         .background-logo img {
-            width: 300px; /* Maak de afbeelding groter */
+            width: 220px; /* Maak de afbeelding groter */
             height: auto;
         }
 
