@@ -94,7 +94,6 @@
             color: #0073e6;
         }
 
-        /* Achtergrondsectie met 10% paarse rechthoek en 10% gradient */
         .background {
             background-image:
                 linear-gradient(to right, #4B0082 10%, transparent 20%, transparent 80%, #4B0082 90%),
@@ -114,8 +113,8 @@
 
         .background-logo {
             position: absolute;
-            top: 25%; /* Plaats het logo op 25% van de hoogte */
-            right: -130px; /* Logo is verplaatst naar rechts */
+            top: 25%;
+            right: -130px;
             transform: translateY(-50%);
         }
 
@@ -125,15 +124,15 @@
         }
 
         .background-text {
-            font-size: 72px; /* Aangepast naar 300% van de vorige grootte (van 24px) */
+            font-size: 72px;
             font-weight: bold;
             color: white;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
             text-align: center;
-            position: absolute; /* Maak de tekst absoluut gepositioneerd */
-            bottom: 100px; /* Plaats de tekst 100px vanaf de onderkant */
-            left: 50%; /* Center horizontaal */
-            transform: translate(-50%, 0); /* Center de tekst op zijn midden */
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translate(-50%, 0);
         }
 
         .background-text span {
@@ -155,6 +154,44 @@
 
         .links a:hover {
             text-decoration: underline;
+        }
+
+        /* Footer sectie styling */
+        footer {
+            background-color: #f0f4f8; /* Lichtblauw/grijsachtige achtergrondkleur */
+            color: #003366; /* Donkerblauw tekstkleur */
+            padding: 40px;
+            text-align: center;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        footer h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        footer p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        footer p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        /* Plaats de afbeelding website.png aan de rechterkant van de footer */
+        .footer-image {
+            position: absolute;
+            top: 50%;
+            right: 40px;
+            transform: translateY(-50%);
+        }
+
+        .footer-image img {
+            width: 300px;
+            height: auto;
         }
     </style>
 
@@ -192,6 +229,19 @@
             </div>
         </div>
     </header>
+
+    <!-- Toegevoegde footer met de tekst en afbeelding aan de rechterkant -->
+    <footer>
+        <h2>Kom kennismaken op het HVC!</h2>
+        <p>Een spannende en leuke tijd breekt aan: de oriëntatie op het voortgezet onderwijs! Om jullie goed te helpen bij deze belangrijke keuze, nodigen wij jullie van harte uit om het HVC beter te leren kennen. We organiseren verschillende activiteiten, zoals kennismakingsmiddagen, boeiende masterclasses, inloopmomenten en natuurlijk onze open dagen.</p>
+        <p>Op deze pagina vind je alle informatie over onze activiteiten en hoe je eraan kunt deelnemen. Het is een geweldige kans om de sfeer te proeven, vragen te stellen en te ontdekken of het HVC bij jullie past.</p>
+        <p>We kijken ernaar uit jullie te verwelkomen!</p>
+
+        <!-- Afbeelding rechts in de footer -->
+        <div class="footer-image">
+            <img src="website.png" alt="Website Afbeelding">
+        </div>
+    </footer>
 </body>
 
 </html>
