@@ -15,12 +15,11 @@
             outline: 0px;
             font: bolder;
             font-size: large;
-            width: 300px; /* Specifieke breedte voor het zoekveld */
-            margin-left: 10px; /* Ruimte tussen zoekveld en tekst */
+            width: 300px;
+            margin-left: 10px;
         }
 
-        body,
-        html {
+        body, html {
             margin: 0;
             padding: 0;
             height: 100%;
@@ -94,9 +93,9 @@
             color: #0073e6;
         }
 
-        /* Achtergrondsectie */
+        /* Achtergrondsectie met paarse fade */
         .background {
-            background-image: url('slider-hvc-hvc.webp'); /* Zorg ervoor dat je de juiste afbeelding hier gebruikt */
+            background-image: linear-gradient(to right, purple, transparent 20%, transparent 80%, purple), url('slider-hvc-hvc.webp');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -112,25 +111,25 @@
         .background-logo {
             position: absolute;
             top: 50%;
-            right: -90px; /* Verplaats het logo 90 pixels buiten het scherm */
+            right: -90px;
             transform: translateY(-50%);
         }
 
         .background-logo img {
-            width: 450px; /* Vergroot de afbeelding naar 450 pixels breed */
+            width: 450px;
             height: auto;
         }
 
         .background-text {
             font-size: 48px;
-            font-weight: bold; /* Dikke tekst voor 'Samen' */
+            font-weight: bold;
             color: white;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
             text-align: center;
         }
 
         .background-text span {
-            font-weight: normal; /* Normale gewicht voor 'Morgen Maken' */
+            font-weight: normal;
         }
 
         .links {
