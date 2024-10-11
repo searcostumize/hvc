@@ -41,7 +41,7 @@
         }
 
         .logo {
-            width: 450px;
+            width: 250px;
             height: auto;
             margin-right: 40px;
         }
@@ -97,27 +97,27 @@
         /* Achtergrondsectie */
         .background {
             background-image: url('slider-hvc-hvc.webp'); /* Zorg ervoor dat je de juiste afbeelding hier gebruikt */
-            background-size: cover; /* Zorgt ervoor dat de afbeelding de hele achtergrond bedekt */
-            background-position: center; /* Plaats de afbeelding in het midden */
-            background-repeat: no-repeat; /* Voorkomt dat de afbeelding herhaald wordt */
-            height: 100vh; /* De achtergrond vult de volledige hoogte van het scherm */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
             position: relative;
             color: white;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end; /* Zorg ervoor dat de tekst onderaan staat */
+            justify-content: flex-end;
             padding: 40px;
         }
 
         .background-logo {
             position: absolute;
             top: 50%;
-            right: 20px;
+            right: -90px; /* Verplaats het logo 90 pixels buiten het scherm */
             transform: translateY(-50%);
         }
 
         .background-logo img {
-            width: 220px; /* Maak de afbeelding groter */
+            width: 450px; /* Vergroot de afbeelding naar 450 pixels breed */
             height: auto;
         }
 
@@ -126,7 +126,7 @@
             font-weight: bold; /* Dikke tekst voor 'Samen' */
             color: white;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-            text-align: center; /* Zorg ervoor dat de tekst gecentreerd is */
+            text-align: center;
         }
 
         .background-text span {
