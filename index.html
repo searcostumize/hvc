@@ -94,9 +94,12 @@
             color: #0073e6;
         }
 
-        /* Achtergrondsectie met donkere paarse fade aan beide zijkanten */
+        /* Achtergrondsectie met 20% paarse rechthoek en 10% gradient */
         .background {
-            background-image: linear-gradient(to right, #4B0082, transparent 15%, transparent 85%, #4B0082), url('slider-hvc-hvc.webp');
+            background-image: 
+                linear-gradient(to right, #4B0082 20%, transparent 30%, transparent 70%, #4B0082 80%), 
+                linear-gradient(to right, #4B0082 0%, transparent 10%, transparent 90%, #4B0082 100%),
+                url('slider-hvc-hvc.webp');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -112,7 +115,7 @@
         .background-logo {
             position: absolute;
             top: 50%;
-            right: -90px;
+            right: -110px;
             transform: translateY(-50%);
         }
 
