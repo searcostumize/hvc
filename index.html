@@ -8,21 +8,12 @@
 </head>
 <body>
     <style>
-        /* Bestaande CSS-styling voor pagina */
-        input {
-            border: 0px;
-            outline: 0px;
-            font: bolder;
-            font-size: large;
-            width: 300px;
-            margin-left: 10px;
-        }
-
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             font-family: Arial, sans-serif;
+            background-color: #f0f4f8; /* Algemene achtergrondkleur lichtblauw */
         }
 
         .header {
@@ -52,34 +43,12 @@
             align-items: flex-start;
         }
 
-        .search-container {
-            display: flex;
-            align-items: center;
-            margin-top: 5px;
-        }
-
-        .search-container h1 {
-            font-size: 24px;
-            color: black;
-            margin: 0;
-            padding-bottom: 5px;
-            border-bottom: 2px solid green;
-        }
-
-        .arrow {
-            font-size: 20px;
-            color: green;
-            margin-left: 10px;
-        }
-
         .utility-links {
             margin-top: 5px;
             font-size: 16px;
             color: #333;
             display: flex;
-            align-items: center;
             gap: 15px;
-            margin-left: 30px;
         }
 
         .utility-links a {
@@ -92,15 +61,12 @@
             color: #0073e6;
         }
 
+        /* Achtergrondsectie */
         .background {
-            background-image:
-                linear-gradient(to right, #4B0082 10%, transparent 20%, transparent 80%, #4B0082 90%),
-                linear-gradient(to right, #4B0082 0%, transparent 10%, transparent 90%, #4B0082 100%),
-                url('slider-hvc-hvc.webp');
+            background-image: url('slider-hvc-hvc.webp');
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
+            height: 400px;
             position: relative;
             color: white;
             display: flex;
@@ -111,125 +77,76 @@
 
         .background-logo {
             position: absolute;
-            top: 25%;
+            top: 20px;
             right: -130px;
-            transform: translateY(-50%);
-        }
-
-        .background-logo img {
             width: 450px;
             height: auto;
         }
 
         .background-text {
-            font-size: 72px;
+            font-size: 300%;
             font-weight: bold;
             color: white;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            margin-top: 100px;
+        }
+
+        /* Footer sectie met grote tekst */
+        .footer-section {
+            background-color: #e0eaf2; /* Lichtblauwe achtergrond */
+            color: #003366; /* Donkerblauwe tekstkleur */
             text-align: center;
-            position: absolute;
-            bottom: 100px;
-            left: 50%;
-            transform: translate(-50%, 0);
-        }
-
-        .background-text span {
-            font-weight: normal;
-        }
-
-        .links {
-            margin-top: 20px;
-            position: relative;
-            z-index: 1;
-            display: flex;
-            gap: 20px;
-        }
-
-        .links a {
-            text-decoration: none;
-            color: #0073e6;
-        }
-
-        .links a:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer sectie styling */
-        footer {
-            background-color: #d1e7f2; /* Lichtblauwe achtergrondkleur */
-            color: #003366; /* Donkerblauw tekstkleur */
-            padding: 40px;
-            margin-top: 20px;
+            padding: 50px 20px;
+            margin-top: 50px;
             position: relative;
         }
 
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .footer-text {
-            max-width: 65%; /* Max breedte om de tekst naast de afbeelding te houden */
-        }
-
-        .footer-content h2 {
-            font-size: 48px;
+        .footer-section h1 {
+            font-size: 36px;
             margin-bottom: 20px;
+            color: #003366; /* Donkerblauw */
         }
 
-        .footer-content p {
+        .footer-section p {
             font-size: 18px;
-            margin-bottom: 20px;
             line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 20px auto; /* Center de tekst en geef ruimte tussen alinea's */
         }
 
-        .footer-content p:last-of-type {
-            margin-bottom: 0;
+        .footer-image {
+            position: absolute;
+            top: 50%;
+            right: 50px;
+            transform: translateY(-50%);
         }
 
         .footer-image img {
             width: 300px;
             height: auto;
-            border-radius: 0 50% 50% 0; /* Maakt de zijkanten bol */
+            border-radius: 50% 50% 0 0; /* Maak bovenhoeken bol */
         }
 
-        /* Flexbox styling voor responsieve layout */
-        @media screen and (max-width: 1200px) {
-            .footer-text {
-                max-width: 60%; /* Max breedte van tekst verminderen op kleinere schermen */
-            }
+        /* Styling voor hyperlinks */
+        a {
+            color: #003366;
+            text-decoration: none;
         }
 
-        @media screen and (max-width: 768px) {
-            .footer-content {
-                flex-direction: column;
-            }
-
-            .footer-image img {
-                width: 100%;
-                max-width: 200px;
-                border-radius: 0 50% 50% 0; /* Zijkanten bol op kleinere schermen */
-            }
-
-            .footer-text {
-                max-width: 100%; /* Zorg ervoor dat de tekst 100% breed is op kleinere schermen */
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 
     <header class="header">
+        <!-- Bovenste gedeelte: Logo aan de linkerkant en links met een pijltje -->
         <div class="top-section">
-            <img src="hvc-logo.svg" alt="HVC Logo" class="logo">
+            <img src="hvc-logo.svg" alt="HVC Logo" class="logo"> <!-- SVG logo helemaal links -->
             <div class="search-section">
-                <div class="search-container">
-                    <h1>Waar ben je naar op zoek?</h1>
-                    <span class="arrow">➔</span>
-                </div>
                 <div class="utility-links">
-                    <input type="search" placeholder="Waar ben je naar op zoek?">
-                    <a href="#">Ziekmelden</a>
+                   <input type="search" placeholder="Waar ben je naar op zoek?"></a>
+                    <span class="arrow">➔</span> <!-- Pijltje buiten de container van de tekst met de groene lijn -->
+                     <a href="#">Ziekmelden</a>
                     <a href="#">Downloads</a>
                     <a href="#">Magister</a>
                     <a href="#">Zermelo</a>
@@ -244,29 +161,30 @@
             </div>
         </div>
 
+        <!-- Achtergrondafbeelding met tekst en logo rechtsboven -->
         <div class="background">
             <div class="background-logo">
                 <img src="logo.png" alt="Logo">
             </div>
             <div class="background-text">
-                Samen <span>Morgen Maken</span>
+                Samen <strong>Morgen</strong> Maken
             </div>
         </div>
     </header>
 
-    <!-- Footer met tekst en afbeelding -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-text">
-                <h2>Kom kennismaken op het HVC!</h2>
-                <p>Een spannende en leuke tijd breekt aan: de oriëntatie op het voortgezet onderwijs! Om jullie goed te helpen bij deze belangrijke keuze, nodigen wij jullie van harte uit om het HVC beter te leren kennen. We organiseren verschillende activiteiten, zoals kennismakingsmiddagen, boeiende masterclasses, inloopmomenten en natuurlijk onze open dagen.</p>
-                <p>Op deze pagina vind je alle informatie over onze activiteiten en hoe je eraan kunt deelnemen. Het is een geweldige kans om de sfeer te proeven, vragen te stellen en te ontdekken of het HVC bij jullie past.</p>
-                <p>We kijken ernaar uit jullie te verwelkomen!</p>
-            </div>
-            <div class="footer-image">
-                <img src="website.png" alt="Website Afbeelding">
-            </div>
+    <!-- Footer sectie met grote tekst en afbeelding -->
+    <section class="footer-section">
+        <h1>Kom kennismaken op het HVC!</h1>
+        <p>Een spannende en leuke tijd breekt aan: de oriëntatie op het voortgezet onderwijs! Om jullie goed te helpen bij deze belangrijke keuze, nodigen wij jullie van harte uit om het HVC beter te leren kennen. We organiseren verschillende activiteiten, zoals kennismakingsmiddagen, boeiende masterclasses, inloopmomenten en natuurlijk onze open dagen.</p>
+
+        <p>Op deze pagina vind je alle informatie over onze activiteiten en hoe je eraan kunt deelnemen. Het is een geweldige kans om de sfeer te proeven, vragen te stellen en te ontdekken of het HVC bij jullie past.</p>
+
+        <p>We kijken ernaar uit jullie te verwelkomen!</p>
+
+        <div class="footer-image">
+            <img src="website.png" alt="Website afbeelding">
         </div>
-    </footer>
+    </section>
+
 </body>
 </html>
