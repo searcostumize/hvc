@@ -79,7 +79,7 @@
             font-size: 16px;
             color: #333;
             display: flex;
-            align-items: center; /* Zorg ervoor dat de items in het midden uitgelijnd zijn */
+            align-items: center;
             gap: 15px;
             margin-left: 30px; /* Meer ruimte aan de linkerkant voor de links */
         }
@@ -104,7 +104,7 @@
             color: white;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: flex-end; /* Zorg ervoor dat de tekst onderaan staat */
             padding: 40px;
         }
 
@@ -121,10 +121,14 @@
 
         .background-text {
             font-size: 48px;
-            font-weight: bold;
+            font-weight: bold; /* Dikke tekst voor 'Samen' */
             color: white;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-            margin-top: 50px;
+            text-align: center; /* Zorg ervoor dat de tekst gecentreerd is */
+        }
+
+        .background-text span {
+            font-weight: normal; /* Normale gewicht voor 'Morgen Maken' */
         }
 
         .links {
@@ -175,7 +179,7 @@
                 <img src="logo.png" alt="Logo">
             </div>
             <div class="background-text">
-                Samen <strong>Morgen</strong> Maken
+                Samen <span>Morgen Maken</span>
             </div>
         </div>
     </header>
