@@ -24,14 +24,14 @@
         .top-section {
             display: flex;
             align-items: center; 
-            padding: 10px 20px;
+            padding: 20px 40px; /* Extra padding voor meer ruimte rondom de content */
             background-color: #f4f4f4;
         }
 
         .logo {
-            width: 300px;
+            width: 150px; /* Verkleind voor betere layout */
             height: auto;
-            margin-right: 20px;
+            margin-right: 40px; /* Ruimte tussen logo en tekstgedeelte */
         }
 
         .search-section {
@@ -54,7 +54,7 @@
             color: #333;
             display: flex; 
             align-items: center; 
-            gap: 15px;
+            gap: 20px; /* Meer ruimte tussen de links */
         }
 
         .utility-links a {
@@ -74,7 +74,7 @@
             margin-right: 10px;
         }
 
-        
+        /* Achtergrondsectie */
         .background {
             background-image: url('slider-hvc-hvc.webp'); 
             background-size: cover;
@@ -85,7 +85,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            padding: 20px;
+            padding: 40px; /* Vergroot padding om ruimte te creëren rondom de tekst */
         }
 
         .background-logo {
@@ -104,15 +104,15 @@
             font-weight: bold;
             color: white;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-            margin-top: 50px; 
+            margin-top: 50px; /* Ruimte tussen de tekst en de links */
         }
 
         .links {
-            margin-top: 20px; 
+            margin-top: 20px; /* Ruimte tussen "waar ben je naar op zoek" en de links */
             position: relative; 
             z-index: 1;
-            display: flex; 
-            gap: 20px;
+            display: flex; /* Flexbox voor horizontale plaatsing */
+            gap: 20px; /* Ruimte tussen de links */
         }
 
         .links a {
@@ -126,21 +126,20 @@
     </style>
 
     <header class="header">
-       
+        <!-- Bovenste gedeelte: Logo aan de linkerkant en links met een pijltje -->
         <div class="top-section">
-            <img src="hvc-logo.svg" alt="HVC Logo" class="logo"> 
+            <img src="hvc-logo.svg" alt="HVC Logo" class="logo"> <!-- SVG logo helemaal links -->
             <div class="search-section">
-                 <div class="utility-links">
-                     <a>Waar ben je naar op zoek?</a>
+                <h1>Waar ben je naar op zoek?</h1>
+                <div class="utility-links">
                     <span class="arrow">➔</span>
-                     <a>                    </a>
                     <a href="#">Ziekmelden</a>
                     <a href="#">Downloads</a>
                     <a href="#">Magister</a>
                     <a href="#">Zermelo</a>
-                      <a href="#">werken bij hvc</a>
+                    <a href="#">Werken bij HVC</a>
                 </div>
-               
+                <!-- Links onder de bovenste sectie, nu naast elkaar -->
                 <div class="links">
                     <a href="#">Leerlingen & Ouders</a>
                     <a href="#">Onze School</a>
@@ -150,10 +149,10 @@
             </div>
         </div>
 
-       
+        <!-- Achtergrondafbeelding met tekst en logo rechtsboven -->
         <div class="background">
             <div class="background-logo">
-                <img src="logo.png">
+                <img src="logo.png" alt="Logo">
             </div>
             <div class="background-text">
                 Samen <strong>Morgen</strong> Maken
