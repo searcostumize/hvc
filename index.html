@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herbert Vissers College</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <style>
+        /* Bestaande CSS-styling voor pagina */
         input {
             border: 0px;
             outline: 0px;
@@ -19,8 +18,7 @@
             margin-left: 10px;
         }
 
-        body,
-        html {
+        body, html {
             margin: 0;
             padding: 0;
             height: 100%;
@@ -169,8 +167,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap; /* Zorgt ervoor dat de tekst en afbeelding onder elkaar komen als er te weinig ruimte is */
             gap: 20px;
+        }
+
+        .footer-text {
+            max-width: 65%; /* Max breedte om de tekst naast de afbeelding te houden */
         }
 
         .footer-content h2 {
@@ -188,22 +189,30 @@
             margin-bottom: 0;
         }
 
-        /* Afbeelding website.png aan de rechterkant van de footer */
         .footer-image img {
             width: 300px;
             height: auto;
         }
 
         /* Flexbox styling voor responsieve layout */
+        @media screen and (max-width: 1200px) {
+            .footer-text {
+                max-width: 60%; /* Max breedte van tekst verminderen op kleinere schermen */
+            }
+        }
+
         @media screen and (max-width: 768px) {
             .footer-content {
                 flex-direction: column;
-                align-items: flex-start;
             }
 
             .footer-image img {
                 width: 100%;
-                max-width: 200px; /* Past de afbeelding aan op kleinere schermen */
+                max-width: 200px;
+            }
+
+            .footer-text {
+                max-width: 100%; /* Zorg ervoor dat de tekst 100% breed is op kleinere schermen */
             }
         }
     </style>
@@ -243,7 +252,7 @@
         </div>
     </header>
 
-    <!-- Footer met flexbox layout -->
+    <!-- Footer met tekst en afbeelding -->
     <footer>
         <div class="footer-content">
             <div class="footer-text">
@@ -258,5 +267,4 @@
         </div>
     </footer>
 </body>
-
 </html>
