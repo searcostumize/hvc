@@ -161,37 +161,50 @@
             background-color: #f0f4f8; /* Lichtblauw/grijsachtige achtergrondkleur */
             color: #003366; /* Donkerblauw tekstkleur */
             padding: 40px;
-            text-align: center;
             margin-top: 20px;
             position: relative;
         }
 
-        footer h2 {
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Zorgt ervoor dat de tekst en afbeelding onder elkaar komen als er te weinig ruimte is */
+            gap: 20px;
+        }
+
+        .footer-content h2 {
             font-size: 48px;
             margin-bottom: 20px;
         }
 
-        footer p {
+        .footer-content p {
             font-size: 18px;
             margin-bottom: 20px;
             line-height: 1.6;
         }
 
-        footer p:last-of-type {
+        .footer-content p:last-of-type {
             margin-bottom: 0;
         }
 
-        /* Plaats de afbeelding website.png aan de rechterkant van de footer */
-        .footer-image {
-            position: absolute;
-            top: 50%;
-            right: 40px;
-            transform: translateY(-50%);
-        }
-
+        /* Afbeelding website.png aan de rechterkant van de footer */
         .footer-image img {
             width: 300px;
             height: auto;
+        }
+
+        /* Flexbox styling voor responsieve layout */
+        @media screen and (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-image img {
+                width: 100%;
+                max-width: 200px; /* Past de afbeelding aan op kleinere schermen */
+            }
         }
     </style>
 
@@ -230,16 +243,18 @@
         </div>
     </header>
 
-    <!-- Toegevoegde footer met de tekst en afbeelding aan de rechterkant -->
+    <!-- Footer met flexbox layout -->
     <footer>
-        <h2>Kom kennismaken op het HVC!</h2>
-        <p>Een spannende en leuke tijd breekt aan: de oriëntatie op het voortgezet onderwijs! Om jullie goed te helpen bij deze belangrijke keuze, nodigen wij jullie van harte uit om het HVC beter te leren kennen. We organiseren verschillende activiteiten, zoals kennismakingsmiddagen, boeiende masterclasses, inloopmomenten en natuurlijk onze open dagen.</p>
-        <p>Op deze pagina vind je alle informatie over onze activiteiten en hoe je eraan kunt deelnemen. Het is een geweldige kans om de sfeer te proeven, vragen te stellen en te ontdekken of het HVC bij jullie past.</p>
-        <p>We kijken ernaar uit jullie te verwelkomen!</p>
-
-        <!-- Afbeelding rechts in de footer -->
-        <div class="footer-image">
-            <img src="website.png" alt="Website Afbeelding">
+        <div class="footer-content">
+            <div class="footer-text">
+                <h2>Kom kennismaken op het HVC!</h2>
+                <p>Een spannende en leuke tijd breekt aan: de oriëntatie op het voortgezet onderwijs! Om jullie goed te helpen bij deze belangrijke keuze, nodigen wij jullie van harte uit om het HVC beter te leren kennen. We organiseren verschillende activiteiten, zoals kennismakingsmiddagen, boeiende masterclasses, inloopmomenten en natuurlijk onze open dagen.</p>
+                <p>Op deze pagina vind je alle informatie over onze activiteiten en hoe je eraan kunt deelnemen. Het is een geweldige kans om de sfeer te proeven, vragen te stellen en te ontdekken of het HVC bij jullie past.</p>
+                <p>We kijken ernaar uit jullie te verwelkomen!</p>
+            </div>
+            <div class="footer-image">
+                <img src="website.png" alt="Website Afbeelding">
+            </div>
         </div>
     </footer>
 </body>
