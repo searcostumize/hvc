@@ -215,9 +215,62 @@
                 max-width: 100%; /* Zorg ervoor dat de tekst 100% breed is op kleinere schermen */
             }
         }
+
+        /* Zoekbalk stijl */
+        .navbar-search input {
+            width: 300px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .navbar-search button {
+            background-color: #1aaba0;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .navbar-search button svg {
+            fill: white;
+        }
+
+        .topbar {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .topbar-text {
+            text-align: right;
+        }
     </style>
 
     <header class="header">
+        <div class="container-xxl px-0 px-xl-2">
+            <nav class="topbar">
+                <div class="container px-0">
+                    <div class="topbar-text">
+                        <form class="navbar-search d-none d-md-block" action="https://www.hvc.nl/zoeken/" method="post">
+                            <input type="text" name="search" id="searchText1" class="form-control searchText" placeholder="Waar ben je naar op zoek:">
+                            <button type="submit" title="Zoeken">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24.467" height="16.167" viewBox="0 0 24.467 16.167">
+                                    <g id="Group_784" data-name="Group 784" transform="translate(-20.5 973.339) rotate(-90)">
+                                        <line id="Line_26" data-name="Line 26" y2="19.638" transform="translate(965.256 22.5)" fill="none" stroke="#1aaba0" stroke-linecap="round" stroke-width="4" />
+                                        <g id="Group_626" data-name="Group 626" transform="translate(1199.448 -777.044) rotate(90)" style="isolation: isolate">
+                                            <line id="Line_20" data-name="Line 20" x2="5.233" y2="5.233" transform="translate(813.938 228.938)" fill="none" stroke="#1aaba0" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                                            <line id="Line_21" data-name="Line 21" y1="5.233" x2="5.233" transform="translate(813.95 234.215)" fill="none" stroke="#1aaba0" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
         <div class="top-section">
             <img src="hvc-logo.svg" alt="HVC Logo" class="logo">
             <div class="search-section">
@@ -227,14 +280,14 @@
                 </div>
                 <div class="utility-links">
                     <input type="search" placeholder="Waar ben je naar op zoek?">
-			<a href="#">Ziekmelden</a>
-			<span>|</span>
-			<a href="#">Downloads</a>
-			<span>|</span>
-			<a href="#">Magister</a>
-			<span>|</span>
-			<a href="#">Zermelo</a>
-			<a href="#">Werken bij HVC</a>
+                    <a href="#">Ziekmelden</a>
+                    <span>|</span>
+                    <a href="#">Downloads</a>
+                    <span>|</span>
+                    <a href="#">Magister</a>
+                    <span>|</span>
+                    <a href="#">Zermelo</a>
+                    <a href="#">Werken bij HVC</a>
                 </div>
                 <div class="links">
                     <a href="#">Leerlingen & Ouders</a>
