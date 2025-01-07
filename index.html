@@ -231,14 +231,15 @@
     height: auto;
     display: block;
     z-index: 1;
+    transform: translateX(10%); /* Verschuif de afbeelding 10% naar rechts */
 }
 
 .overlay {
     position: absolute;
     top: 0;
-    left: 25%; /* Verplaats het blauwe vlak 25% naar rechts */
-    width: 25%; /* Houd de breedte van de overlay op 25% */
-    height: 100%; /* Houd de hoogte van de overlay gelijk aan de afbeelding */
+    left: 25%; /* Het blauwe vlak verschuift 25% naar rechts */
+    width: 25%; /* Breedte van het blauwe vlak */
+    height: 100%; /* Hoogte van de overlay is gelijk aan de afbeelding */
     background-color: rgba(0, 0, 139, 0.9); /* Blauwe kleur met transparantie */
     z-index: 2;
     display: flex;
