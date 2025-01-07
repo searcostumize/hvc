@@ -216,43 +216,41 @@
                 max-width: 100%; /* Zorg ervoor dat de tekst 100% breed is op kleinere schermen */
             }
         }
-        .image-container {
+  .image-container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px; /* Stel de gewenste hoogte in */
     width: 100%; /* Volledige breedte */
-    background-color: #f4f4f4; /* Achtergrondkleur van de container */
+    height: auto; /* Zorgt dat de hoogte zich aanpast aan de afbeelding */
+    background-color: #f4f4f4; /* Achtergrondkleur voor duidelijkheid */
     overflow: hidden; /* Verbergt elementen buiten de container */
 }
 
 .centered-image {
-    max-width: 100%; /* Zorg ervoor dat de afbeelding responsief is */
-    height: auto; /* Houd de verhoudingen in stand */
-    position: relative; /* Standaardpositie */
+    max-width: 100%; /* Volledige breedte van de container */
+    height: auto; /* Houdt de verhoudingen van de afbeelding */
+    display: block; /* Standaard weergave */
     z-index: 1; /* Achter de overlay */
-    border-radius: 10px; /* Optionele afgeronde hoeken */
 }
 
 .overlay {
     position: absolute;
-    top: 50%; /* Verticaal centreren */
-    left: 25%; /* Plaatst het vierkant deels links */
-    width: 300px; /* Breedte van het vierkant */
-    height: 300px; /* Hoogte van het vierkant */
-    background-color: rgba(0, 0, 139, 0.8); /* Semi-transparant donkerblauw */
-    transform: translate(-50%, -50%); /* Centreer het vierkant op de gewenste positie */
-    z-index: 2; /* Plaats het boven de afbeelding */
+    top: 50%; /* Centreer verticaal */
+    left: -150px; /* Half buiten de linkerzijkant van de afbeelding */
+    width: 300px; /* Breedte van het blauwe vierkant */
+    height: 300px; /* Hoogte van het blauwe vierkant */
+    background-color: rgba(0, 0, 139, 0.8); /* Semi-transparante blauwe kleur */
+    transform: translateY(-50%); /* Centreer verticaal */
+    z-index: 2; /* Boven de afbeelding */
     display: flex; /* Flexbox voor tekstuitlijning */
     justify-content: center; /* Horizontaal centreren van de tekst */
     align-items: center; /* Verticaal centreren van de tekst */
     color: white; /* Tekstkleur */
-    font-size: 16px; /* Tekstgrootte */
-    text-align: center; /* Zorg ervoor dat de tekst in het midden staat */
-    padding: 20px; /* Optioneel: ruimte binnenin het vierkant */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Schaduw rond het vierkant */
-    border-radius: 8px; /* Afgeronde hoeken */
+    text-align: center; /* Tekst gecentreerd binnen de overlay */
+    padding: 20px; /* Ruimte binnenin het blauwe vierkant */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Schaduw voor extra visueel effect */
+    border-radius: 8px; /* Optioneel: afgeronde hoeken */
 }
 
 .overlay h1 {
