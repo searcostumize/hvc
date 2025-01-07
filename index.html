@@ -216,6 +216,56 @@
                 max-width: 100%; /* Zorg ervoor dat de tekst 100% breed is op kleinere schermen */
             }
         }
+        .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Stel de gewenste hoogte in */
+    width: 100%; /* Volledige breedte */
+    background-color: #f4f4f4; /* Achtergrondkleur van de container */
+    overflow: hidden; /* Verbergt elementen buiten de container */
+}
+
+.centered-image {
+    max-width: 100%; /* Zorg ervoor dat de afbeelding responsief is */
+    height: auto; /* Houd de verhoudingen in stand */
+    position: relative; /* Standaardpositie */
+    z-index: 1; /* Achter de overlay */
+    border-radius: 10px; /* Optionele afgeronde hoeken */
+}
+
+.overlay {
+    position: absolute;
+    top: 50%; /* Verticaal centreren */
+    left: 25%; /* Plaatst het vierkant deels links */
+    width: 300px; /* Breedte van het vierkant */
+    height: 300px; /* Hoogte van het vierkant */
+    background-color: rgba(0, 0, 139, 0.8); /* Semi-transparant donkerblauw */
+    transform: translate(-50%, -50%); /* Centreer het vierkant op de gewenste positie */
+    z-index: 2; /* Plaats het boven de afbeelding */
+    display: flex; /* Flexbox voor tekstuitlijning */
+    justify-content: center; /* Horizontaal centreren van de tekst */
+    align-items: center; /* Verticaal centreren van de tekst */
+    color: white; /* Tekstkleur */
+    font-size: 16px; /* Tekstgrootte */
+    text-align: center; /* Zorg ervoor dat de tekst in het midden staat */
+    padding: 20px; /* Optioneel: ruimte binnenin het vierkant */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Schaduw rond het vierkant */
+    border-radius: 8px; /* Afgeronde hoeken */
+}
+
+.overlay h1 {
+    font-size: 20px; /* Grotere koptekst */
+    margin-bottom: 10px; /* Ruimte onder de koptekst */
+}
+
+.overlay p {
+    font-size: 14px; /* Kleinere tekstgrootte */
+    line-height: 1.5; /* Betere leesbaarheid */
+    margin: 0; /* Verwijder standaard marges */
+}
+
 </style>
  
     <header class="header">
@@ -269,39 +319,17 @@
  
      
 </footer>
-          <div class="blok205 scrollimation in">
-  <div class="container">
-    <div class="inner">
-      <div class="row position-relative">
-        <!-- Blue Block with Text -->
-        <div class="col-xl-3 bg-primary text-white d-flex align-items-center justify-content-center">
-          <div class="p-3 text-center">
-            <h1 class="fsize1">Samen morgen maken.</h1>
-            <p>
-              Welkom op het Herbert Vissers College! Dé school die jou uitnodigt om samen de toekomst mooier te maken. 
-              Door verbinding te maken. Met jezelf, jouw talent en de wereld om je heen. We delen onze positieve blik en 
-              kijken vooruit.
-            </p>
-          </div>
-        </div>
-        <!-- Image Section -->
-        <figure class="col-xl-6 decoration2 position-relative text-center text-xl-start" style="--parallax-translate-y: -7.383331996402305px;">
-          <img class="img-fluid rounded" src="samenmaken.webp" alt="3 meisjes op schoolplein">
-        </figure>
-        <!-- Text Section -->
-        <div class="col-xl-6 d-flex align-items-center">
-          <div class="text text-white bg-primary p-5rem rounded z999">
-            <h1 class="fsize1">Laten we ‘morgen’ maken. Samen!</h1>
-            <p>
-              Drie kernwaarden staan hierbij centraal: we houden de kwaliteit van onderwijs hoog, we werken vanuit een heldere structuur 
-              en we zorgen dat iedereen zich hier veilig, eerlijk behandeld en gerespecteerd voelt. En dat doen we samen. Met leerlingen, 
-              docenten, medewerkers en ouders. Samen zetten we een positieve beweging in gang. Doe, leer en ontdek je mee?
-            </p>
-          </div>
-        </div>
-      </div>
+ <div class="image-container">
+    <div class="overlay">
+        <h1>Samen morgen maken.</h1>
+        <p>
+            Welkom op het Herbert Vissers College! Dé school die jou uitnodigt om samen de toekomst mooier te maken. 
+            Door verbinding te maken. Met jezelf, jouw talent en de wereld om je heen. We delen onze positieve blik en 
+            kijken vooruit.
+        </p>
     </div>
-  </div>
+    <img src="samenmaken.webp" alt="3 meisjes op schoolplein" class="centered-image">
 </div>
+
 </body>
 </html>
