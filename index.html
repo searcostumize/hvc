@@ -227,17 +227,19 @@
 }
 
 .centered-image {
-    max-width: 70%; /* Schaal de afbeelding naar 70% van de containerbreedte */
+    max-width: 45%; /* Verklein de afbeelding nog verder (nu 45% van de containerbreedte) */
     height: auto; /* Behoud de oorspronkelijke verhoudingen */
     display: block;
     z-index: 1; /* Achter de overlay */
+    left: 25%; /* Verplaats de afbeelding 25% naar rechts */
+    position: relative;
 }
 
 .overlay {
     position: absolute;
     top: 0;
-    left: -25%; /* Verplaats het blauwe vlak 25% naar rechts */
-    width: 25%; /* Maak de overlay breder (nu 25% van de breedte van de afbeelding) */
+    left: 50%; /* Verplaats het blauwe vlak 50% naar rechts van de oorspronkelijke positie */
+    width: 25%; /* De breedte van het blauwe vlak blijft hetzelfde */
     height: 100%; /* Zorg dat het blauwe vlak de volledige hoogte van de afbeelding behoudt */
     background-color: rgba(0, 0, 139, 0.9); /* Blauwe kleur met transparantie */
     z-index: 2; /* Boven de afbeelding */
