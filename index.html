@@ -221,28 +221,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Volledige breedte van container */
-    background-color: #f4f4f4; /* Achtergrondkleur voor visuele controle */
-    overflow: hidden; /* Verberg elementen buiten de container */
+    width: 100%;
+    background-color: #f4f4f4;
+    overflow: hidden;
 }
 
 .centered-image {
-    max-width: 45%; /* Verklein de afbeelding nog verder (nu 45% van de containerbreedte) */
-    height: auto; /* Behoud de oorspronkelijke verhoudingen */
+    max-width: 70%;
+    height: auto;
     display: block;
-    z-index: 1; /* Achter de overlay */
-    left: 25%; /* Verplaats de afbeelding 25% naar rechts */
-    position: relative;
+    z-index: 1;
 }
 
 .overlay {
     position: absolute;
     top: 0;
-    left: 50%; /* Verplaats het blauwe vlak 50% naar rechts van de oorspronkelijke positie */
-    width: 25%; /* De breedte van het blauwe vlak blijft hetzelfde */
-    height: 100%; /* Zorg dat het blauwe vlak de volledige hoogte van de afbeelding behoudt */
+    left: 25%; /* Verplaats het blauwe vlak 25% naar rechts */
+    width: 25%; /* Houd de breedte van de overlay op 25% */
+    height: 100%; /* Houd de hoogte van de overlay gelijk aan de afbeelding */
     background-color: rgba(0, 0, 139, 0.9); /* Blauwe kleur met transparantie */
-    z-index: 2; /* Boven de afbeelding */
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -254,14 +252,14 @@
 }
 
 .overlay h1 {
-    font-size: 6vw; /* Dynamische font-grootte gebaseerd op de viewport breedte */
+    font-size: 6vw;
     margin-bottom: 10px;
-    line-height: 1.1; /* Verklein de tussenruimte tussen regels */
-    font-weight: bold; /* Maak de tekst vet */
+    line-height: 1.1;
+    font-weight: bold;
 }
 
 .overlay p {
-    font-size: 3vw; /* Dynamische font-grootte voor de tekst */
+    font-size: 3vw;
     line-height: 1.4;
     margin: 0;
 }
