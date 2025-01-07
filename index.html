@@ -237,8 +237,8 @@
     position: absolute;
     top: 0;
     left: -25%; /* Verplaats het blauwe vlak 25% naar rechts */
-    width: 50%; /* Breedte van het blauwe vierkant */
-    height: 30%; /* Maak het blauwe vlak dunner, 30% van de afbeelding hoogte */
+    width: 25%; /* Maak de overlay breder (nu 25% van de breedte van de afbeelding) */
+    height: 100%; /* Zorg dat het blauwe vlak de volledige hoogte van de afbeelding behoudt */
     background-color: rgba(0, 0, 139, 0.9); /* Blauwe kleur met transparantie */
     z-index: 2; /* Boven de afbeelding */
     display: flex;
@@ -247,7 +247,7 @@
     align-items: center;
     color: white;
     text-align: center;
-    padding: 20px; /* Verminder de padding voor minder ruimte */
+    padding: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -263,7 +263,6 @@
     line-height: 1.4;
     margin: 0;
 }
-
 
 </style>
  
