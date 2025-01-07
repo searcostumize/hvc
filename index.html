@@ -216,7 +216,7 @@
                 max-width: 100%; /* Zorg ervoor dat de tekst 100% breed is op kleinere schermen */
             }
         }
-  .image-container {
+.image-container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -252,14 +252,15 @@
 }
 
 .overlay h1 {
-    font-size: 36px; /* Vergroot lettertype van de kop */
+    font-size: 6vw; /* Dynamische font-grootte gebaseerd op de viewport breedte */
     margin-bottom: 20px;
-    line-height: 1.4;
+    line-height: 1.1; /* Verklein de tussenruimte tussen regels */
+    font-weight: bold; /* Maak de tekst vet */
 }
 
 .overlay p {
-    font-size: 18px; /* Vergroot lettertype van de tekst */
-    line-height: 1.8;
+    font-size: 3vw; /* Dynamische font-grootte voor de tekst */
+    line-height: 1.4;
     margin: 0;
 }
 
