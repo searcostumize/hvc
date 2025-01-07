@@ -222,7 +222,6 @@
     justify-content: center;
     align-items: center;
     width: 100%; /* Volledige breedte */
-    height: auto; /* Zorgt dat de hoogte zich aanpast aan de afbeelding */
     background-color: #f4f4f4; /* Achtergrondkleur voor duidelijkheid */
     overflow: hidden; /* Verbergt elementen buiten de container */
 }
@@ -236,31 +235,31 @@
 
 .overlay {
     position: absolute;
-    top: 50%; /* Centreer verticaal */
-    left: -150px; /* Half buiten de linkerzijkant van de afbeelding */
-    width: 300px; /* Breedte van het blauwe vierkant */
-    height: 300px; /* Hoogte van het blauwe vierkant */
-    background-color: rgba(0, 0, 139, 0.8); /* Semi-transparante blauwe kleur */
-    transform: translateY(-50%); /* Centreer verticaal */
+    top: 0; /* Start bij de bovenkant van de afbeelding */
+    left: -50%; /* Plaats de helft buiten de afbeelding */
+    width: 50%; /* Breedte van het blauwe vierkant */
+    height: 100%; /* Zelfde hoogte als de afbeelding */
+    background-color: rgba(0, 0, 139, 0.9); /* Blauwe kleur met lichte transparantie */
     z-index: 2; /* Boven de afbeelding */
     display: flex; /* Flexbox voor tekstuitlijning */
+    flex-direction: column; /* Verticaal stapelen van tekst */
     justify-content: center; /* Horizontaal centreren van de tekst */
     align-items: center; /* Verticaal centreren van de tekst */
     color: white; /* Tekstkleur */
     text-align: center; /* Tekst gecentreerd binnen de overlay */
-    padding: 20px; /* Ruimte binnenin het blauwe vierkant */
+    padding: 40px; /* Ruimte binnenin het blauwe vlak */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Schaduw voor extra visueel effect */
-    border-radius: 8px; /* Optioneel: afgeronde hoeken */
 }
 
 .overlay h1 {
-    font-size: 20px; /* Grotere koptekst */
-    margin-bottom: 10px; /* Ruimte onder de koptekst */
+    font-size: 36px; /* Grotere koptekst */
+    margin-bottom: 20px; /* Ruimte onder de koptekst */
+    line-height: 1.4; /* Goede leesbaarheid */
 }
 
 .overlay p {
-    font-size: 14px; /* Kleinere tekstgrootte */
-    line-height: 1.5; /* Betere leesbaarheid */
+    font-size: 18px; /* Grotere tekstgrootte */
+    line-height: 1.8; /* Betere leesbaarheid */
     margin: 0; /* Verwijder standaard marges */
 }
 
