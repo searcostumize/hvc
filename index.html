@@ -221,47 +221,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Volledige breedte */
-    background-color: #f4f4f4; /* Achtergrondkleur voor duidelijkheid */
-    overflow: hidden; /* Verbergt elementen buiten de container */
+    width: 100%; /* Volledige breedte van container */
+    background-color: #f4f4f4; /* Achtergrondkleur voor visuele controle */
+    overflow: hidden; /* Verberg elementen buiten de container */
 }
 
 .centered-image {
-    max-width: 100%; /* Volledige breedte van de container */
-    height: auto; /* Houdt de verhoudingen van de afbeelding */
-    display: block; /* Standaard weergave */
+    max-width: 70%; /* Schaal de afbeelding naar 70% van de containerbreedte */
+    height: auto; /* Behoud de oorspronkelijke verhoudingen */
+    display: block;
     z-index: 1; /* Achter de overlay */
 }
 
 .overlay {
     position: absolute;
-    top: 0; /* Start bij de bovenkant van de afbeelding */
-    left: -50%; /* Plaats de helft buiten de afbeelding */
+    top: 0;
+    left: -50%;
     width: 50%; /* Breedte van het blauwe vierkant */
-    height: 100%; /* Zelfde hoogte als de afbeelding */
-    background-color: rgba(0, 0, 139, 0.9); /* Blauwe kleur met lichte transparantie */
+    height: 100%; /* Even hoog als de afbeelding */
+    background-color: rgba(0, 0, 139, 0.9); /* Blauwe kleur met transparantie */
     z-index: 2; /* Boven de afbeelding */
-    display: flex; /* Flexbox voor tekstuitlijning */
-    flex-direction: column; /* Verticaal stapelen van tekst */
-    justify-content: center; /* Horizontaal centreren van de tekst */
-    align-items: center; /* Verticaal centreren van de tekst */
-    color: white; /* Tekstkleur */
-    text-align: center; /* Tekst gecentreerd binnen de overlay */
-    padding: 40px; /* Ruimte binnenin het blauwe vlak */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Schaduw voor extra visueel effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .overlay h1 {
-    font-size: 36px; /* Grotere koptekst */
-    margin-bottom: 20px; /* Ruimte onder de koptekst */
-    line-height: 1.4; /* Goede leesbaarheid */
+    font-size: 36px; /* Vergroot lettertype van de kop */
+    margin-bottom: 20px;
+    line-height: 1.4;
 }
 
 .overlay p {
-    font-size: 18px; /* Grotere tekstgrootte */
-    line-height: 1.8; /* Betere leesbaarheid */
-    margin: 0; /* Verwijder standaard marges */
+    font-size: 18px; /* Vergroot lettertype van de tekst */
+    line-height: 1.8;
+    margin: 0;
 }
+
 
 </style>
  
