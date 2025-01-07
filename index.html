@@ -238,7 +238,7 @@
     top: 0;
     left: -25%; /* Verplaats het blauwe vlak 25% naar rechts */
     width: 50%; /* Breedte van het blauwe vierkant */
-    height: 100%; /* Even hoog als de afbeelding */
+    height: 30%; /* Maak het blauwe vlak dunner, 30% van de afbeelding hoogte */
     background-color: rgba(0, 0, 139, 0.9); /* Blauwe kleur met transparantie */
     z-index: 2; /* Boven de afbeelding */
     display: flex;
@@ -247,13 +247,13 @@
     align-items: center;
     color: white;
     text-align: center;
-    padding: 40px;
+    padding: 20px; /* Verminder de padding voor minder ruimte */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .overlay h1 {
     font-size: 6vw; /* Dynamische font-grootte gebaseerd op de viewport breedte */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     line-height: 1.1; /* Verklein de tussenruimte tussen regels */
     font-weight: bold; /* Maak de tekst vet */
 }
@@ -263,6 +263,7 @@
     line-height: 1.4;
     margin: 0;
 }
+
 
 </style>
  
