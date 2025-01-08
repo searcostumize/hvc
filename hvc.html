@@ -1,152 +1,118 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Herbert Vissers College</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kennismakingsactiviteiten</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2D236A; /* Dark purple */
+            color: white;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .column {
+            width: 32%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #64C8FF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: white;
+            color: #2D236A;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #64C8FF;
+            color: white;
+        }
+
+        .note {
+            font-size: 0.9rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
-<style>
-    /* Bestaande CSS-styling voor pagina */
-    input {
-        border: 0px;
-        outline: 0px;
-        font: bolder;
-        font-size: large;
-        width: 300px;
-        margin-left: 10px;
-    }
-
-    body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        font-family: Arial, sans-serif;
-    }
-    .image-container {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        background-color: #f4f4f4;
-        overflow: hidden;
-    }
-
-    .centered-image {
-        max-width: 70%;
-        height: auto;
-        display: block;
-        z-index: 1;
-        border-radius: 20px;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 5%; /* Het blauwe vlak verschuift 25% naar rechts */
-        width: 25%; /* Breedte van het blauwe vlak */
-        height: 100%; /* Hoogte van de overlay is gelijk aan de afbeelding */
-        background-color: rgba(0, 0, 139, 0.9); /* Blauwe kleur met transparantie */
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-        border-radius: 20px;  
-    }
-
-    .overlay h1 {
-        font-size: 3vw; /* Kleinere tekstgrootte */
-        margin-bottom: 10px;
-        line-height: 1.1;
-        font-weight: bold;
-    }
-
-    .overlay p {
-        font-size: 1.75vw; /* Kleinere tekstgrootte */
-        line-height: 1.4;
-        margin: 0;
-    }
-    .triangle-container {
-        position: relative;
-        width: 300px;
-        height: 300px;
-    }
-
-    .upper-line {
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        width: 0;
-        height: 0;
-        border-top: 25px solid transparent;
-        border-bottom: 25px solid transparent;
-        border-left: 50px solid red; /* Color of the upper line */
-        transform: translate(-50%, -50%) rotate(45deg);
-    }
-
-    .middle-circle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100px;
-        height: 100px;
-        background-color: green; /* Color of the middle circle */
-        border-radius: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .lower-line {
-        position: absolute;
-        bottom: 25%;
-        left: 50%;
-        width: 0;
-        height: 0;
-        border-top: 50px solid transparent;
-        border-bottom: 50px solid transparent;
-        border-left: 100px solid blue; /* Color of the lower line */
-        transform: translate(-50%, 50%) rotate(-45deg);
-    }
-
-    .image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        clip-path: polygon(0 0, 100% 0, 100% 100%);
-        z-index: -1;
-    }
-</style>
-<div class="image-container">
-    <div class="overlay">
-        <h1>Samen morgen maken.</h1>
-        <p>
-            Welkom op het Herbert Vissers College! Dé school die jou uitnodigt 
-            om samen de toekomst mooier te maken. Door verbinding te maken. Met 
-            jezelf, jouw talent en de wereld om je heen. We delen onze positieve 
-            blik en kijken vooruit. Drie kernwaarden staan hierbij centraal: we 
-            houden de kwaliteit van onderwijs hoog, we werken vanuit een heldere 
-            structuur en we zorgen dat iedereen zich hier veilig, eerlijk behandeld 
-            en gerespecteerd voelt. En dat doen we samen. Met leerlingen, docenten, 
-            medewerkers en ouders. Samen zetten we een positieve beweging in gang. 
-            Doe, leer en ontdek je mee?
-        </p>
-    </div>
-    <img src="samenmaken.webp" alt="3 meisjes op schoolplein" class="centered-image">
+    <h1>Kennismakingsactiviteiten</h1>
     <div class="container">
-        <img src="example.jpg" alt="Background Image" class="image">
-        <div class="upper-line"></div>
-        <div class="middle-circle"></div>
-        <div class="lower-line"></div>
+        <!-- Left Column -->
+        <div class="column">
+            <h2>Voor leerlingen</h2>
+            <p><strong>HVX kennismakingsmiddag</strong><br>
+            Maandag 4 november 2024 | 15.00 - 16.30 uur<br>
+            <a href="#">Aanmelden is niet meer mogelijk</a></p>
+
+            <p><strong>Masterclasses vmbo & mavo/havo/vwo</strong><br>
+            Woensdag 20 november 2024 | 15.00 - 17.00 uur<br>
+            Woensdag 27 november 2024 | 15.00 - 17.00 uur<br>
+            <a href="#" class="button">Aanmelden Masterclasses mavo/havo/vwo</a><br>
+            <a href="#" class="button">Aanmelden Masterclasses vmbo</a></p>
+
+            <p><strong>Super8Dag</strong><br>
+            Vrijdag 10 januari 2025 | 8.30 - 12.00 uur</p>
+
+            <p><strong>HVX meeloopmiddagen</strong><br>
+            Maandag 13 januari 2025 | 15.00 - 16.30 uur<br>
+            Woensdag 29 januari 2025 | 13.30 - 16.00 uur</p>
+
+            <p class="note">Aanmelden voor deze activiteiten kan via de links die tzt hier geplaatst zullen worden.</p>
+        </div>
+
+        <!-- Right Column -->
+        <div class="column">
+            <h2>Voor ouders</h2>
+            <p><strong>Inloopmomenten</strong><br>
+            Vrijdag 22 november 2024 | 9.00 – 10.30 uur</p>
+
+            <p><strong>Informatieavonden ouders groep 8</strong><br>
+            - vmbo basis + kader<br>
+            Maandag 20 januari 2025 | 19.00 uur<br><br>
+
+            - mavo, havo, vwo<br>
+            Dinsdag 21 januari 2025 | 19.00 uur<br><br>
+
+            - HVX<br>
+            Woensdag 22 januari 2025 | 19.00 uur</p>
+
+            <p class="note">Aanmelden hiervoor is niet nodig, u bent van harte welkom.</p>
+        </div>
     </div>
-</div>
 </body>
 </html>
