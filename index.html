@@ -1,336 +1,390 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Herbert Vissers College</title>
-<link rel="stylesheet" href="styles.css">
-<style>
-    /* Bestaande CSS-styling voor pagina */
-    input {
-        border: 0px;
-        outline: 0px;
-        font: bolder;
-        font-size: large;
-        width: 300px;
-        margin-left: 10px;
-    }
-
-    body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        font-family: Arial, sans-serif;
-    }
-
-    .header {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-
-    .top-section {
-        display: flex;
-        align-items: center;
-        padding: 20px 40px;
-        background-color: #ffffff;
-    }
-
-    .logo {
-        width: 250px;
-        height: auto;
-        margin-right: 40px;
-    }
-
-    .search-section {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .search-container {
-        display: flex;
-        align-items: center;
-        margin-top: 5px;
-    }
-
-    .search-container input {
-        font-size: 24px;
-        color: black;
-        margin: 0;
-        padding-bottom: 5px;
-    }
-
-    .arrow {
-        font-size: 20px;
-        color: green;
-        margin-left: 10px;
-    }
-    .search-arrow {
-        border-bottom: 2px solid green;
-    }
-
-    .utility-links {
-        margin-top: 5px;
-        font-size: 16px;
-        color: #333;
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        margin-left: 30px;
-    }
-
-    .utility-links a {
-        text-decoration: none;
-        color: #555;
-    }
-
-    .utility-links a:hover {
-        text-decoration: underline;
-        color: #0073e6;
-    }
-
-    .background {
-        background-image:
-            linear-gradient(to right, #4B0082 10%, transparent 20%, transparent 80%, #4B0082 90%),
-            linear-gradient(to right, #4B0082 0%, transparent 10%, transparent 90%, #4B0082 100%),
-            url('slider-hvc-hvc.webp');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
-        width: 100%;
-        position: relative;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 40px;
-    }
-
-    .background-logo {
-        position: absolute;
-        top: 25%;
-        right: -100px;
-        transform: translateY(-50%);
-    }
-
-    .background-logo img {
-        width: 450px;
-        height: auto;
-    }
-
-    .background-text {
-        font-size: 72px;
-        font-weight: bold;
-        color: white;
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-        text-align: center;
-        position: absolute;
-        bottom: 100px;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-
-    .background-text span {
-        font-weight: normal;
-    }
-
-    .links {
-        margin-top: 20px;
-        position: relative;
-        z-index: 1;
-        display: flex;
-        gap: 20px;
-    }
-
-    .links a {
-        text-decoration: none;
-        color: #0073e6;
-    }
-
-    .links a:hover {
-        text-decoration: underline;
-    }
-
-    .section-container {
-        background-color: white;
-        color: #003366;
-        padding: 40px;
-        margin-top: 20px;
-        position: relative;
-    }
-
-    .section-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .section-text {
-        max-width: 65%;
-    }
-
-    .section-content h2 {
-        font-size: 48px;
-        margin-bottom: 20px;
-    }
-
-    .section-content p {
-        font-size: 18px;
-        margin-bottom: 20px;
-        line-height: 1.6;
-    }
-
-    .section-content p:last-of-type {
-        margin-bottom: 0;
-    }
-
-    .section-image img {
-        width: 500px;
-        height: auto;
-        border-radius: 10%;
-    }
-
-    @media screen and (max-width: 1200px) {
-        .section-text {
-            max-width: 60%;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbert Vissers College</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Bestaande CSS-styling voor pagina */
+        input {
+            border: 0px;
+            outline: 0px;
+            font: bolder;
+            font-size: large;
+            width: 300px;
+            margin-left: 10px;
         }
-    }
 
-    @media screen and (max-width: 768px) {
-        .section-content {
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
             flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+
+        .top-section {
+            display: flex;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #ffffff;
+        }
+
+        .logo {
+            width: 250px;
+            height: auto;
+            margin-right: 40px;
+        }
+
+        .search-section {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        .search-container input {
+            font-size: 24px;
+            color: black;
+            margin: 0;
+            padding-bottom: 5px;
+        }
+
+        .arrow {
+            font-size: 20px;
+            color: green;
+            margin-left: 10px;
+        }
+        .search-arrow {
+            border-bottom: 2px solid green;
+        }
+
+        .utility-links {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-left: 30px;
+        }
+
+        .utility-links a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        .utility-links a:hover {
+            text-decoration: underline;
+            color: #0073e6;
+        }
+
+        .background {
+            background-image:
+                linear-gradient(to right, #4B0082 10%, transparent 20%, transparent 80%, #4B0082 90%),
+                linear-gradient(to right, #4B0082 0%, transparent 10%, transparent 90%, #4B0082 100%),
+                url('slider-hvc-hvc.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 40px;
+        }
+
+        .background-logo {
+            position: absolute;
+            top: 25%;
+            right: -100px;
+            transform: translateY(-50%);
+        }
+
+        .background-logo img {
+            width: 450px;
+            height: auto;
+        }
+
+        .background-text {
+            font-size: 72px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        .background-text span {
+            font-weight: normal;
+        }
+
+        .links {
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            gap: 20px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .section-container {
+            background-color: white;
+            color: #003366;
+            padding: 40px;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .section-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .section-text {
+            max-width: 65%;
+        }
+
+        .section-content h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .section-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .section-content p:last-of-type {
+            margin-bottom: 0;
         }
 
         .section-image img {
-            width: 100%;
-            max-width: 200px;
+            width: 500px;
+            height: auto;
+            border-radius: 10%;
         }
 
-        .section-text {
-            max-width: 100%;
+        @media screen and (max-width: 1200px) {
+            .section-text {
+                max-width: 60%;
+            }
         }
-    }
 
-    /* sec2 sectie styling */
-    .sec2-container {
-        background-color: #E6E6FA; /* Lichtblauwe achtergrondkleur */
-        color: #003366; /* Donkerblauw tekstkleur */
-        padding: 40px;
-        margin-top: 20px;
-        position: relative;
-    }
+        @media screen and (max-width: 768px) {
+            .section-content {
+                flex-direction: column;
+            }
 
-    .sec2-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
+            .section-image img {
+                width: 100%;
+                max-width: 200px;
+            }
 
-    .sec2-text {
-        max-width: 65%; /* Max breedte om de tekst naast de afbeelding te houden */
-    }
-
-    .sec2-content h2 {
-        font-size: 48px;
-        margin-bottom: 20px;
-    }
-
-    .sec2-content p {
-        font-size: 18px;
-        margin-bottom: 20px;
-        line-height: 1.6;
-    }
-
-    .sec2-content p:last-of-type {
-        margin-bottom: 0;
-    }
-
-    .sec2-image img {
-        width: 300px;
-        height: auto;
-        border-radius: 20px;
-    }
-
-    /* Flexbox styling voor responsieve layout */
-    @media screen and (max-width: 1200px) {
-        .sec2-text {
-            max-width: 60%; /* Max breedte van tekst verminderen op kleinere schermen */
+            .section-text {
+                max-width: 100%;
+            }
         }
-    }
 
-    @media screen and (max-width: 768px) {
+        /* sec2 sectie styling */
+        .sec2-container {
+            background-color: #E6E6FA; /* Lichtblauwe achtergrondkleur */
+            color: #003366; /* Donkerblauw tekstkleur */
+            padding: 40px;
+            margin-top: 20px;
+            position: relative;
+        }
+
         .sec2-content {
-            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .sec2-text {
+            max-width: 65%; /* Max breedte om de tekst naast de afbeelding te houden */
+        }
+
+        .sec2-content h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .sec2-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .sec2-content p:last-of-type {
+            margin-bottom: 0;
         }
 
         .sec2-image img {
+            width: 300px;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        /* Flexbox styling voor responsieve layout */
+        @media screen and (max-width: 1200px) {
+            .sec2-text {
+                max-width: 60%; /* Max breedte van tekst verminderen op kleinere schermen */
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .sec2-content {
+                flex-direction: column;
+            }
+
+            .sec2-image img {
+                width: 100%;
+                max-width: 200px;
+            }
+
+            .sec2-text {
+                max-width: 100%; /* Zorg ervoor dat de tekst 100% breed is op kleinere schermen */
+            }
+        }
+
+        .image-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
-            max-width: 200px;
+            background-color: #f4f4f4;
+            overflow: hidden;
         }
 
-        .sec2-text {
-            max-width: 100%; /* Zorg ervoor dat de tekst 100% breed is op kleinere schermen */
+        .centered-image {
+            max-width: 70%;
+            height: auto;
+            display: block;
+            z-index: 1;
+            border-radius: 20px;
         }
-    }
 
-    .image-container {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        background-color: #f4f4f4;
-        overflow: hidden;
-    }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 5%; /* Het blauwe vlak verschuift 25% naar rechts */
+            width: 25%; /* Breedte van het blauwe vlak */
+            height: 100%; /* Hoogte van de overlay is gelijk aan de afbeelding */
+            background-color: rgba(0, 0, 139, 0.9); /* Blauwe kleur met transparantie */
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;  
+        }
 
-    .centered-image {
-        max-width: 70%;
-        height: auto;
-        display: block;
-        z-index: 1;
-        border-radius: 20px;
-    }
+        .overlay h1 {
+            font-size: 3vw; /* Kleinere tekstgrootte */
+            margin-bottom: 10px;
+            line-height: 1.1;
+            font-weight: bold;
+        }
 
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 5%; /* Het blauwe vlak verschuift 25% naar rechts */
-        width: 25%; /* Breedte van het blauwe vlak */
-        height: 100%; /* Hoogte van de overlay is gelijk aan de afbeelding */
-        background-color: rgba(0, 0, 139, 0.9); /* Blauwe kleur met transparantie */
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-        border-radius: 20px;  
-    }
+        .overlay p {
+            font-size: 1.75vw; /* Kleinere tekstgrootte */
+            line-height: 1.4;
+            margin: 0;
+        }
 
-    .overlay h1 {
-        font-size: 3vw; /* Kleinere tekstgrootte */
-        margin-bottom: 10px;
-        line-height: 1.1;
-        font-weight: bold;
-    }
+        .footer1-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
 
-    .overlay p {
-        font-size: 1.75vw; /* Kleinere tekstgrootte */
-        line-height: 1.4;
-        margin: 0;
-    }
-</style>
-</head>
+        .column {
+            width: 32%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #64C8FF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: white;
+            color: #2D236A;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #64C8FF;
+            color: white;
+        }
+
+        .note {
+            font-size: 0.9rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
+   </head>
 <body>
 <header class="header">
     <div class="top-section">
@@ -422,6 +476,52 @@
             </p>
         </div>
         <img src="samenmaken.webp" alt="3 meisjes op schoolplein" class="centered-image">
+    </div> 
+</head>
+<body>
+    <h1>Kennismakingsactiviteiten</h1>
+    <div class="footer1-container">
+        <!-- Left Column -->
+        <div class="column">
+            <h2>Voor leerlingen</h2>
+            <p><strong>HVX kennismakingsmiddag</strong><br>
+            Maandag 4 november 2024 | 15.00 - 16.30 uur<br>
+            <a href="#">Aanmelden is niet meer mogelijk</a></p>
+
+            <p><strong>Masterclasses vmbo & mavo/havo/vwo</strong><br>
+            Woensdag 20 november 2024 | 15.00 - 17.00 uur<br>
+            Woensdag 27 november 2024 | 15.00 - 17.00 uur<br>
+            <a href="#" class="button">Aanmelden Masterclasses mavo/havo/vwo</a><br>
+            <a href="#" class="button">Aanmelden Masterclasses vmbo</a></p>
+
+            <p><strong>Super8Dag</strong><br>
+            Vrijdag 10 januari 2025 | 8.30 - 12.00 uur</p>
+
+            <p><strong>HVX meeloopmiddagen</strong><br>
+            Maandag 13 januari 2025 | 15.00 - 16.30 uur<br>
+            Woensdag 29 januari 2025 | 13.30 - 16.00 uur</p>
+
+            <p class="note">Aanmelden voor deze activiteiten kan via de links die tzt hier geplaatst zullen worden.</p>
+        </div>
+
+        <!-- Right Column -->
+        <div class="column">
+            <h2>Voor ouders</h2>
+            <p><strong>Inloopmomenten</strong><br>
+            Vrijdag 22 november 2024 | 9.00 – 10.30 uur</p>
+
+            <p><strong>Informatieavonden ouders groep 8</strong><br>
+            - vmbo basis + kader<br>
+            Maandag 20 januari 2025 | 19.00 uur<br><br>
+
+            - mavo, havo, vwo<br>
+            Dinsdag 21 januari 2025 | 19.00 uur<br><br>
+
+            - HVX<br>
+            Woensdag 22 januari 2025 | 19.00 uur</p>
+
+            <p class="note">Aanmelden hiervoor is niet nodig, u bent van harte welkom.</p>
+        </div>
     </div>
 </body>
 </html>
