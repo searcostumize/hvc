@@ -79,26 +79,39 @@
         height: 300px;
     }
 
-    .triangle {
+    .upper-line {
         position: absolute;
+        top: 0;
+        left: 50%;
         width: 0;
         height: 0;
-        border-left: 150px solid transparent;
-        border-right: 150px solid transparent;
-        border-bottom: 150px solid #009688; /* Triangle color */
-        top: 0;
-        right: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 50px solid red; /* Color of the upper line */
+        transform: translate(-50%, -50%) rotate(45deg);
     }
 
-    .oval {
+    .middle-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        background-color: green; /* Color of the middle circle */
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .lower-line {
         position: absolute;
         bottom: 0;
-        left: 0;
-        width: 120px;
-        height: 240px;
-        background-color: #007bb5; /* Oval color */
-        border-radius: 120px 120px 0 0;
-        transform: rotate(-45deg);
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+        border-left: 100px solid blue; /* Color of the lower line */
+        transform: translate(-50%, 50%) rotate(45deg);
     }
 
     .image {
@@ -130,8 +143,9 @@
     <img src="samenmaken.webp" alt="3 meisjes op schoolplein" class="centered-image">
     <div class="container">
         <img src="example.jpg" alt="Background Image" class="image">
-        <div class="triangle"></div>
-        <div class="oval"></div>
+        <div class="upper-line"></div>
+        <div class="middle-circle"></div>
+        <div class="lower-line"></div>
     </div>
 </div>
 </body>
