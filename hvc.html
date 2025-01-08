@@ -401,9 +401,18 @@
             color: #ffffff;
         }
                 }
-        iframe {
+           .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
+            background-color: white;
+            padding: 10px;
+        }
+        iframe {
+            border-radius: 8px;
+            border: none;
         }
     </style>
    </head>
@@ -547,14 +556,15 @@
             </div>
         </div>
     </div>
-   <iframe 
-        width="1700" 
-        height="850" 
-        src="https://www.youtube.com/embed/aj3LhZA7OZI" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen>
-    </iframe>
+  <div class="video-container">
+        <iframe 
+            width="1560" 
+            height="765" 
+            src="https://www.youtube.com/embed/aj3LhZA7OZI" 
+            title="Centered YouTube Video" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
 </body>
 </html>
