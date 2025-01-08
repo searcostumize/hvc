@@ -73,6 +73,43 @@
         line-height: 1.4;
         margin: 0;
     }
+                .triangle-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
+        .triangle {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 150px solid transparent;
+            border-left: 150px solid #009688; /* Triangle color */
+            top: 0;
+            right: 0;
+        }
+
+        .oval {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 120px;
+            height: 240px;
+            background-color: #007bb5; /* Oval color */
+            border-radius: 120px 120px 0 0;
+            transform: rotate(-45deg);
+        }
+
+        .image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            clip-path: polygon(0 0, 100% 0, 100% 100%);
+            z-index: -1;
+        }
     </style>
 <div class="image-container">
         <div class="overlay">
@@ -90,7 +127,11 @@
             </p>
         </div>
         <img src="samenmaken.webp" alt="3 meisjes op schoolplein" class="centered-image">
-        ::after == $0
+        <div class="container">
+        <img src="example.jpg" alt="Background Image" class="image">
+        <div class="triangle"></div>
+        <div class="oval"></div>
+    </div>
     </div>
 </body>
 </html>
