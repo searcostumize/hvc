@@ -401,18 +401,22 @@
             color: #ffffff;
         }
                 }
-           .video-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-            background-color: white;
-            padding: 10px;
-        }
-        iframe {
-            border-radius: 8px;
-            border: none;
+          .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: white;
+    padding: 10px;
+    width: 100%; /* Ensure the container takes up the full width */
+    height: 100vh; /* Example height, adjust as needed */
+}
+
+iframe {
+    border-radius: 8px;
+    border: none;
+}
         }
     </style>
    </head>
@@ -556,15 +560,8 @@
             </div>
         </div>
     </div>
-  <div class="video-container">
-        <iframe 
-            width="1000" 
-            height="500" 
-            src="https://www.youtube.com/embed/aj3LhZA7OZI" 
-            title="Centered YouTube Video" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-        </iframe>
-    </div>
+ <div class="video-container">
+    <iframe src="your-video-url" width="560" height="315"></iframe>
+</div>
 </body>
 </html>
