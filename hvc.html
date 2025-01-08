@@ -8,23 +8,23 @@
 </head>
 <body>
 <style>
-        /* Bestaande CSS-styling voor pagina */
-        input {
-            border: 0px;
-            outline: 0px;
-            font: bolder;
-            font-size: large;
-            width: 300px;
-            margin-left: 10px;
-        }
- 
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
-     .image-container {
+    /* Bestaande CSS-styling voor pagina */
+    input {
+        border: 0px;
+        outline: 0px;
+        font: bolder;
+        font-size: large;
+        width: 300px;
+        margin-left: 10px;
+    }
+
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+    }
+    .image-container {
         position: relative;
         display: flex;
         justify-content: center;
@@ -73,65 +73,66 @@
         line-height: 1.4;
         margin: 0;
     }
-                .triangle-container {
-            position: relative;
-            width: 300px;
-            height: 300px;
-        }
+    .triangle-container {
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
 
-        .triangle {
-            position: absolute;
-            width: 0;
-            height: 0;
-            border-top: 150px solid transparent;
-            border-left: 150px solid #009688; /* Triangle color */
-            top: 0;
-            right: 0;
-        }
+    .triangle {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 150px solid #009688; /* Triangle color */
+        top: 0;
+        right: 0;
+    }
 
-        .oval {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 120px;
-            height: 240px;
-            background-color: #007bb5; /* Oval color */
-            border-radius: 120px 120px 0 0;
-            transform: rotate(-45deg);
-        }
+    .oval {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 120px;
+        height: 240px;
+        background-color: #007bb5; /* Oval color */
+        border-radius: 120px 120px 0 0;
+        transform: rotate(-45deg);
+    }
 
-        .image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            clip-path: polygon(0 0, 100% 0, 100% 100%);
-            z-index: -1;
-        }
-    </style>
+    .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 100%);
+        z-index: -1;
+    }
+</style>
 <div class="image-container">
-        <div class="overlay">
-            <h1>Samen morgen maken.</h1>
-            <p>
-                Welkom op het Herbert Vissers College! Dé school die jou uitnodigt 
-                om samen de toekomst mooier te maken. Door verbinding te maken. Met 
-                jezelf, jouw talent en de wereld om je heen. We delen onze positieve 
-                blik en kijken vooruit. Drie kernwaarden staan hierbij centraal: we 
-                houden de kwaliteit van onderwijs hoog, we werken vanuit een heldere 
-                structuur en we zorgen dat iedereen zich hier veilig, eerlijk behandeld 
-                en gerespecteerd voelt. En dat doen we samen. Met leerlingen, docenten, 
-                medewerkers en ouders. Samen zetten we een positieve beweging in gang. 
-                Doe, leer en ontdek je mee?
-            </p>
-        </div>
-        <img src="samenmaken.webp" alt="3 meisjes op schoolplein" class="centered-image">
-        <div class="container">
+    <div class="overlay">
+        <h1>Samen morgen maken.</h1>
+        <p>
+            Welkom op het Herbert Vissers College! Dé school die jou uitnodigt 
+            om samen de toekomst mooier te maken. Door verbinding te maken. Met 
+            jezelf, jouw talent en de wereld om je heen. We delen onze positieve 
+            blik en kijken vooruit. Drie kernwaarden staan hierbij centraal: we 
+            houden de kwaliteit van onderwijs hoog, we werken vanuit een heldere 
+            structuur en we zorgen dat iedereen zich hier veilig, eerlijk behandeld 
+            en gerespecteerd voelt. En dat doen we samen. Met leerlingen, docenten, 
+            medewerkers en ouders. Samen zetten we een positieve beweging in gang. 
+            Doe, leer en ontdek je mee?
+        </p>
+    </div>
+    <img src="samenmaken.webp" alt="3 meisjes op schoolplein" class="centered-image">
+    <div class="container">
         <img src="example.jpg" alt="Background Image" class="image">
         <div class="triangle"></div>
         <div class="oval"></div>
     </div>
-    </div>
+</div>
 </body>
 </html>
