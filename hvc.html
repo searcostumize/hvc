@@ -1,4 +1,10 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
         /* sec2 sectie styling */
         .sec2-container {
             background-color: #E6E6FA; /* Lichtblauwe achtergrondkleur */
@@ -7,61 +13,61 @@
             margin-top: 20px;
             position: relative;
         }
- 
+
         .sec2-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 20px;
         }
- 
+
         .sec2-text {
             max-width: 65%; /* Max breedte om de tekst naast de afbeelding te houden */
         }
- 
+
         .sec2-content h2 {
             font-size: 48px;
             margin-bottom: 20px;
         }
- 
+
         .sec2-content p {
             font-size: 18px;
             margin-bottom: 20px;
             line-height: 1.6;
         }
- 
+
         .sec2-content p:last-of-type {
             margin-bottom: 0;
         }
- 
+
         .sec2-image img {
             width: 300px;
             height: auto;
             border-radius: 20px;
         }
- 
+
         /* Flexbox styling voor responsieve layout */
         @media screen and (max-width: 1200px) {
             .sec2-text {
                 max-width: 60%; /* Max breedte van tekst verminderen op kleinere schermen */
             }
         }
- 
+
         @media screen and (max-width: 768px) {
             .sec2-content {
                 flex-direction: column;
             }
- 
+
             .sec2-image img {
                 width: 100%;
                 max-width: 200px;
             }
- 
+
             .sec2-text {
                 max-width: 100%; /* Zorg ervoor dat de tekst 100% breed is op kleinere schermen */
             }
         }
-        
+
         .image-container {
             position: relative;
             display: flex;
@@ -71,7 +77,7 @@
             background-color: #f4f4f4;
             overflow: hidden;
         }
-        
+
         .centered-image {
             max-width: 70%;
             height: auto;
@@ -79,7 +85,7 @@
             z-index: 1;
             border-radius: 20px;
         }
-        
+
         .overlay {
             position: absolute;
             top: 0;
@@ -98,40 +104,41 @@
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
             border-radius: 20px;  
         }
-        
+
         .overlay h1 {
             font-size: 3vw; /* Kleinere tekstgrootte */
             margin-bottom: 10px;
             line-height: 1.1;
             font-weight: bold;
         }
-        
+
         .overlay p {
             font-size: 1.75vw; /* Kleinere tekstgrootte */
             line-height: 1.4;
             margin: 0;
         }
-        </style>
-
+    </style>
+</head>
+<body>
     <!-- sec2 met tekst en afbeelding -->
-        <sec2>
-<div class="sec2-content">
-<div class="sec2-text">
-<h2>Kom kennismaken op het HVC!</h2>
-<p>Een spannende en leuke tijd breekt aan: de oriëntatie op het voortgezet onderwijs! Om jullie goed te helpen bij deze belangrijke keuze, nodigen wij jullie van harte uit om het HVC beter te leren kennen. We organiseren verschillende activiteiten, zoals kennismakingsmiddagen, boeiende masterclasses, inloopmomenten en natuurlijk onze open dagen.</p>
-<p>Op deze pagina vind je alle informatie over onze activiteiten en hoe je eraan kunt deelnemen. Het is een geweldige kans om de sfeer te proeven, vragen te stellen en te ontdekken of het HVC bij jullie past.</p>
-<p>We kijken ernaar uit jullie te verwelkomen!</p>
-</div>
-<div class="sec2-image">
-<img src="website.png" alt="Website Afbeelding" style=" border-radius: 20px;" 
-</div>
-</div>  
-</sec2>
-  
-  <div class="image-container">
-    <div class="overlay">
-        <h1>Samen morgen maken.</h1>
-        <p>
+    <div class="sec2-container">
+        <div class="sec2-content">
+            <div class="sec2-text">
+                <h2>Kom kennismaken op het HVC!</h2>
+                <p>Een spannende en leuke tijd breekt aan: de oriëntatie op het voortgezet onderwijs! Om jullie goed te helpen bij deze belangrijke keuze, nodigen wij jullie van harte uit om het HVC beter te leren kennen. We organiseren verschillende activiteiten, zoals kennismakingsmiddagen, boeiende masterclasses, inloopmomenten en natuurlijk onze open dagen.</p>
+                <p>Op deze pagina vind je alle informatie over onze activiteiten en hoe je eraan kunt deelnemen. Het is een geweldige kans om de sfeer te proeven, vragen te stellen en te ontdekken of het HVC bij jullie past.</p>
+                <p>We kijken ernaar uit jullie te verwelkomen!</p>
+            </div>
+            <div class="sec2-image">
+                <img src="website.png" alt="Website Afbeelding" style="border-radius: 20px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <div class="overlay">
+            <h1>Samen morgen maken.</h1>
+            <p>
                 Welkom op het Herbert Vissers College! Dé school die jou uitnodigt 
                 om samen de toekomst mooier te maken. Door verbinding te maken. Met 
                 jezelf, jouw talent en de wereld om je heen. We delen onze positieve 
@@ -141,9 +148,9 @@
                 en gerespecteerd voelt. En dat doen we samen. Met leerlingen, docenten, 
                 medewerkers en ouders. Samen zetten we een positieve beweging in gang. 
                 Doe, leer en ontdek je mee?
-        </p>
+            </p>
+        </div>
+        <img src="samenmaken.webp" alt="3 meisjes op schoolplein" class="centered-image">
     </div>
-    <img src="samenmaken.webp" alt="3 meisjes op schoolplein" class="centered-image">
-</div>     
 </body>
 </html>
