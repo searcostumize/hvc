@@ -178,12 +178,14 @@
         .section-content h2 {
             font-size: 48px;
             margin-bottom: 20px;
+            color: #003366;
         }
 
         .section-content p {
             font-size: 18px;
             margin-bottom: 20px;
             line-height: 1.6;
+            color: #003366;
         }
 
         .section-content p:last-of-type {
@@ -240,6 +242,7 @@
         .sec2-content h2 {
             font-size: 48px;
             margin-bottom: 20px;
+             color: #003366;
         }
 
         .sec2-content p {
@@ -330,27 +333,39 @@
             margin: 0;
         }
 
+        .wrapper {
+            background-color: #000066;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+
         .footer1-container {
             display: flex;
             justify-content: space-between;
             max-width: 1200px;
             margin: 50px auto;
             padding: 20px;
+            border-radius: 10px; /* Optional: to give rounded corners */
         }
 
         .column {
             width: 32%;
+            color: #ffffff;
         }
 
         h1 {
             text-align: center;
             font-size: 2rem;
             margin-bottom: 30px;
+            color: #ffffff;
         }
 
         h2 {
             font-size: 1.5rem;
             margin-bottom: 20px;
+            color: #ffffff;
         }
 
         a {
@@ -360,6 +375,7 @@
 
         a:hover {
             text-decoration: underline;
+            color: #ffffff;
         }
 
         .button {
@@ -382,6 +398,21 @@
             font-size: 0.9rem;
             margin-top: 10px;
             font-style: italic;
+            color: #ffffff;
+        }
+                }
+           .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            background-color: white;
+            padding: 10px;
+        }
+        iframe {
+            border-radius: 8px;
+            border: none;
         }
     </style>
    </head>
@@ -480,48 +511,60 @@
 </head>
 <body>
     <h1>Kennismakingsactiviteiten</h1>
-    <div class="footer1-container">
-        <!-- Left Column -->
-        <div class="column">
-            <h2>Voor leerlingen</h2>
-            <p><strong>HVX kennismakingsmiddag</strong><br>
-            Maandag 4 november 2024 | 15.00 - 16.30 uur<br>
-            <a href="#">Aanmelden is niet meer mogelijk</a></p>
+ <div class="wrapper">
+        <div class="footer1-container">
+            <!-- Left Column -->
+            <div class="column">
+                <h2>Voor leerlingen</h2>
+                <p><strong>HVX kennismakingsmiddag</strong><br>
+                Maandag 4 november 2024 | 15.00 - 16.30 uur<br>
+                <a href="#">Aanmelden is niet meer mogelijk</a></p>
 
-            <p><strong>Masterclasses vmbo & mavo/havo/vwo</strong><br>
-            Woensdag 20 november 2024 | 15.00 - 17.00 uur<br>
-            Woensdag 27 november 2024 | 15.00 - 17.00 uur<br>
-            <a href="#" class="button">Aanmelden Masterclasses mavo/havo/vwo</a><br>
-            <a href="#" class="button">Aanmelden Masterclasses vmbo</a></p>
+                <p><strong>Masterclasses vmbo & mavo/havo/vwo</strong><br>
+                Woensdag 20 november 2024 | 15.00 - 17.00 uur<br>
+                Woensdag 27 november 2024 | 15.00 - 17.00 uur<br>
+                <a href="#" class="button">Aanmelden Masterclasses mavo/havo/vwo</a><br>
+                <a href="#" class="button">Aanmelden Masterclasses vmbo</a></p>
 
-            <p><strong>Super8Dag</strong><br>
-            Vrijdag 10 januari 2025 | 8.30 - 12.00 uur</p>
+                <p><strong>Super8Dag</strong><br>
+                Vrijdag 10 januari 2025 | 8.30 - 12.00 uur</p>
 
-            <p><strong>HVX meeloopmiddagen</strong><br>
-            Maandag 13 januari 2025 | 15.00 - 16.30 uur<br>
-            Woensdag 29 januari 2025 | 13.30 - 16.00 uur</p>
+                <p><strong>HVX meeloopmiddagen</strong><br>
+                Maandag 13 januari 2025 | 15.00 - 16.30 uur<br>
+                Woensdag 29 januari 2025 | 13.30 - 16.00 uur</p>
 
-            <p class="note">Aanmelden voor deze activiteiten kan via de links die tzt hier geplaatst zullen worden.</p>
+                <p class="note">Aanmelden voor deze activiteiten kan via de links die tzt hier geplaatst zullen worden.</p>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <h2>Voor ouders</h2>
+                <p><strong>Inloopmomenten</strong><br>
+                Vrijdag 22 november 2024 | 9.00 – 10.30 uur</p>
+
+                <p><strong>Informatieavonden ouders groep 8</strong><br>
+                - vmbo basis + kader<br>
+                Maandag 20 januari 2025 | 19.00 uur<br><br>
+
+                - mavo, havo, vwo<br>
+                Dinsdag 21 januari 2025 | 19.00 uur<br><br>
+
+                - HVX<br>
+                Woensdag 22 januari 2025 | 19.00 uur</p>
+
+                <p class="note">Aanmelden hiervoor is niet nodig, u bent van harte welkom.</p>
+            </div>
         </div>
-
-        <!-- Right Column -->
-        <div class="column">
-            <h2>Voor ouders</h2>
-            <p><strong>Inloopmomenten</strong><br>
-            Vrijdag 22 november 2024 | 9.00 – 10.30 uur</p>
-
-            <p><strong>Informatieavonden ouders groep 8</strong><br>
-            - vmbo basis + kader<br>
-            Maandag 20 januari 2025 | 19.00 uur<br><br>
-
-            - mavo, havo, vwo<br>
-            Dinsdag 21 januari 2025 | 19.00 uur<br><br>
-
-            - HVX<br>
-            Woensdag 22 januari 2025 | 19.00 uur</p>
-
-            <p class="note">Aanmelden hiervoor is niet nodig, u bent van harte welkom.</p>
-        </div>
+    </div>
+  <div class="video-container">
+        <iframe 
+            width="1000" 
+            height="500" 
+            src="https://www.youtube.com/embed/aj3LhZA7OZI" 
+            title="Centered YouTube Video" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
     </div>
 </body>
 </html>
