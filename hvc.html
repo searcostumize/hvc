@@ -1,156 +1,70 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herbert Vissers College</title>
+    <title>Onze Agenda</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<style>
-    /* Basis styling */
-    body, html {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-    }
-
-    .header {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .top-section {
-        display: flex;
-        align-items: center;
-        padding: 20px 40px;
-        background-color: #f4f4f4;
-    }
-
-    .logo {
-        width: 250px;
-        margin-right: 40px;
-    }
-
-    .search-section {
-        flex-grow: 1;
-    }
-
-    .search-container h1 {
-        font-size: 24px;
-        color: black;
-        border-bottom: 2px solid green;
-    }
-
-    .utility-links {
-        margin-top: 10px;
-        display: flex;
-        gap: 15px;
-    }
-
-    .utility-links a {
-        text-decoration: none;
-        color: #555;
-    }
-
-    .utility-links a:hover {
-        color: #0073e6;
-    }
-
-    .background {
-        background: linear-gradient(to right, #4B0082 10%, transparent 20%, transparent 80%, #4B0082 90%), url('slider-hvc-hvc.webp');
-        background-size: cover;
-        background-position: center;
-        height: 60vh;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        text-align: center;
-    }
-
-    .background-text {
-        font-size: 48px;
-        font-weight: bold;
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    }
-
-    footer {
-        background-color: #d1e7f2;
-        color: #003366;
-        padding: 40px;
-    }
-
-    .footer-content {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
-    .footer-text {
-        flex: 1;
-    }
-
-    .footer-content h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-
-    .footer-image img {
-        width: 300px;
-        border-radius: 20px;
-    }
-
-    @media screen and (max-width: 768px) {
-        .footer-content {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .footer-image img {
-            max-width: 100%;
-        }
-    }
-</style>
-
-<header class="header">
-    <div class="top-section">
-        <img src="hvc-logo.svg" alt="HVC Logo" class="logo">
-        <div class="search-section">
-            <div class="search-container">
-                <h1>Waar ben je naar op zoek?</h1>
+    <div class="agenda-container">
+        <h1 class="agenda-title">Onze agenda</h1>
+        <div class="agenda-item">
+            <div class="date">
+                <span class="day">06 - 10</span>
+                <span class="month">JAN</span>
             </div>
-            <div class="utility-links">
-                <input type="search" placeholder="Waar ben je naar op zoek?">
-                <a href="#">Ziekmelden</a>
-                <a href="#">Downloads</a>
-                <a href="#">Magister</a>
-                <a href="#">Zermelo</a>
-                <a href="#">Werken bij HVC</a>
+            <div class="details">
+                <span class="label mavo">MAVO</span>
+                <p>2-mavo skikamp</p>
+            </div>
+        </div>
+        <hr>
+        <div class="agenda-item">
+            <div class="date">
+                <span class="day">08</span>
+                <span class="month">JAN</span>
+            </div>
+            <div class="details">
+                <span class="label havo-vwo">HAVO/VWO</span>
+                <p>1-vwo NEMO wetenschaporiëntatie</p>
+            </div>
+        </div>
+        <hr>
+        <div class="agenda-item">
+            <div class="date">
+                <span class="day">08</span>
+                <span class="month">JAN</span>
+            </div>
+            <div class="details">
+                <span class="label vmbo">VMBO</span>
+                <p>2-vmbo b/k bezoek IW NH (techniekleerlingen)</p>
+            </div>
+        </div>
+        <hr>
+        <div class="agenda-item">
+            <div class="date">
+                <span class="day">10</span>
+                <span class="month">JAN</span>
+            </div>
+            <div class="details">
+                <span class="label groep78">GROEP 7 EN 8</span>
+                <p>Super8Dag (groep 8 leerlingen)</p>
+            </div>
+        </div>
+        <hr>
+        <div class="agenda-item">
+            <div class="date">
+                <span class="day">10</span>
+                <span class="month">JAN</span>
+            </div>
+            <div class="details">
+                <span class="label vmbo">VMBO</span>
+                <span class="label mavo">MAVO</span>
+                <span class="label havo-vwo">HAVO/VWO</span>
+                <p>Leerlingen HVC roostervrij</p>
             </div>
         </div>
     </div>
-    <div class="background">
-        <div class="background-text">
-            Samen <span>Morgen Maken</span>
-        </div>
-    </div>
-</header>
-
-<footer>
-    <div class="footer-content">
-        <div class="footer-text">
-            <h2>Kom kennismaken op het HVC!</h2>
-            <p>Een spannende en leuke tijd breekt aan: de oriëntatie op het voortgezet onderwijs! Om jullie goed te helpen bij deze belangrijke keuze, nodigen wij jullie van harte uit om het HVC beter te leren kennen. We organiseren verschillende activiteiten, zoals kennismakingsmiddagen, boeiende masterclasses, inloopmomenten en natuurlijk onze open dagen.</p>
-            <p>We kijken ernaar uit jullie te verwelkomen!</p>
-        </div>
-        <div class="footer-image">
-            <img src="website.png" alt="Website Afbeelding">
-        </div>
-    </div>
-</footer>
 </body>
 </html>
-
